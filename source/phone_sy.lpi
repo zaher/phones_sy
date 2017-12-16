@@ -1,0 +1,2611 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CONFIG>
+  <ProjectOptions>
+    <Version Value="10"/>
+    <PathDelim Value="\"/>
+    <General>
+      <MainUnit Value="0"/>
+      <ResourceType Value="res"/>
+      <UseXPManifest Value="True"/>
+    </General>
+    <BuildModes Count="2" Active="Debug">
+      <Item1 Name="Debug" Default="True"/>
+      <Item2 Name="Release">
+        <CompilerOptions>
+          <Version Value="11"/>
+          <PathDelim Value="\"/>
+          <Target>
+            <Filename Value="..\bin\phone_sy"/>
+          </Target>
+          <SearchPaths>
+            <IncludeFiles Value="$(ProjOutDir)"/>
+            <OtherUnitFiles Value="M:\home\pascal\lib\minilib\connection\source\ui\"/>
+            <UnitOutputDirectory Value="..\units\Release"/>
+          </SearchPaths>
+          <Parsing>
+            <SyntaxOptions>
+              <UseAnsiStrings Value="False"/>
+            </SyntaxOptions>
+          </Parsing>
+          <CodeGeneration>
+            <SmartLinkUnit Value="True"/>
+            <Optimizations>
+              <OptimizationLevel Value="3"/>
+            </Optimizations>
+          </CodeGeneration>
+          <Linking>
+            <Debugging>
+              <GenerateDebugInfo Value="False"/>
+            </Debugging>
+            <LinkSmart Value="True"/>
+            <Options>
+              <Win32>
+                <GraphicApplication Value="True"/>
+              </Win32>
+            </Options>
+          </Linking>
+          <Other>
+            <Verbosity>
+              <ShowGenInfo Value="False"/>
+            </Verbosity>
+          </Other>
+        </CompilerOptions>
+      </Item2>
+    </BuildModes>
+    <PublishOptions>
+      <Version Value="2"/>
+      <IgnoreBinaries Value="False"/>
+      <IncludeFileFilter Value="*.(pas|pp|inc|lfm|lpr|lrs|lpi|lpk|sh|xml)"/>
+      <ExcludeFileFilter Value="*.(bak|ppu|ppw|o|so);*~;backup"/>
+    </PublishOptions>
+    <RunParams>
+      <local>
+        <FormatVersion Value="1"/>
+        <LaunchingApplication PathPlusParams="/usr/X11R6/bin/xterm -T 'Lazarus Run Output' -e $(LazarusDir)/tools/runwait.sh $(TargetCmdLine)"/>
+      </local>
+    </RunParams>
+    <RequiredPackages Count="9">
+      <Item1>
+        <PackageName Value="FCL"/>
+      </Item1>
+      <Item2>
+        <PackageName Value="SQLDBLaz"/>
+      </Item2>
+      <Item3>
+        <PackageName Value="MiniConnections"/>
+      </Item3>
+      <Item4>
+        <PackageName Value="MiniXML"/>
+      </Item4>
+      <Item5>
+        <PackageName Value="MiniCommons"/>
+      </Item5>
+      <Item6>
+        <PackageName Value="MiniLib"/>
+      </Item6>
+      <Item7>
+        <PackageName Value="SynEdit"/>
+        <MinVersion Major="1" Valid="True"/>
+      </Item7>
+      <Item8>
+        <PackageName Value="LCLBase"/>
+        <MinVersion Major="1" Release="1" Valid="True"/>
+      </Item8>
+      <Item9>
+        <PackageName Value="LCL"/>
+      </Item9>
+    </RequiredPackages>
+    <Units Count="346">
+      <Unit0>
+        <Filename Value="phone_sy.lpr"/>
+        <IsPartOfProject Value="True"/>
+        <IsVisibleTab Value="True"/>
+        <EditorIndex Value="2"/>
+        <CursorPos X="48" Y="15"/>
+        <UsageCount Value="201"/>
+        <Loaded Value="True"/>
+      </Unit0>
+      <Unit1>
+        <Filename Value="MainForms.pas"/>
+        <IsPartOfProject Value="True"/>
+        <ComponentName Value="MainForm"/>
+        <HasResources Value="True"/>
+        <ResourceBaseClass Value="Form"/>
+        <EditorIndex Value="1"/>
+        <TopLine Value="162"/>
+        <CursorPos X="27" Y="169"/>
+        <UsageCount Value="200"/>
+        <Bookmarks Count="1">
+          <Item0 Y="207" ID="2"/>
+        </Bookmarks>
+        <Loaded Value="True"/>
+        <LoadedDesigner Value="True"/>
+      </Unit1>
+      <Unit2>
+        <Filename Value="PlacesForms.pas"/>
+        <ComponentName Value="PlacesForm"/>
+        <ResourceBaseClass Value="Form"/>
+        <TopLine Value="37"/>
+        <CursorPos X="16" Y="63"/>
+        <UsageCount Value="53"/>
+      </Unit2>
+      <Unit3>
+        <Filename Value="..\lib\ccsDBEngine.pas"/>
+        <TopLine Value="116"/>
+        <CursorPos Y="125"/>
+        <UsageCount Value="5"/>
+      </Unit3>
+      <Unit4>
+        <Filename Value="W:\work\delphi\jobs\tacbord_sql\source\mpos\lib\mposClasses.pas"/>
+        <TopLine Value="3537"/>
+        <CursorPos X="26" Y="3545"/>
+        <UsageCount Value="10"/>
+      </Unit4>
+      <Unit5>
+        <Filename Value="..\lib\ccsClasses.pas"/>
+        <TopLine Value="140"/>
+        <CursorPos X="32" Y="158"/>
+        <UsageCount Value="32"/>
+      </Unit5>
+      <Unit6>
+        <Filename Value="W:\home\pascal\lib\minilib\MiniXml\source\mnXMLRttiProfile.pas"/>
+        <TopLine Value="558"/>
+        <CursorPos Y="560"/>
+        <UsageCount Value="5"/>
+      </Unit6>
+      <Unit7>
+        <Filename Value="W:\work\delphi\jobs\tacbord_sql\source\mpos\lib\mposSQLEngine.pas"/>
+        <UsageCount Value="10"/>
+      </Unit7>
+      <Unit8>
+        <Filename Value="..\lib\ccsSQLEngine.pas"/>
+        <TopLine Value="402"/>
+        <CursorPos X="23" Y="420"/>
+        <UsageCount Value="3"/>
+        <Bookmarks Count="1">
+          <Item0 X="3" Y="594" ID="1"/>
+        </Bookmarks>
+      </Unit8>
+      <Unit9>
+        <Filename Value="V:\programs\lazarus\lcl\include\control.inc"/>
+        <TopLine Value="2011"/>
+        <CursorPos Y="2029"/>
+        <UsageCount Value="4"/>
+      </Unit9>
+      <Unit10>
+        <Filename Value="V:\programs\lazarus\lcl\include\buttoncontrol.inc"/>
+        <TopLine Value="40"/>
+        <CursorPos Y="58"/>
+        <UsageCount Value="4"/>
+      </Unit10>
+      <Unit11>
+        <Filename Value="W:\home\pascal\lib\minilib\MiniConnection\db\mncSQLite.pas"/>
+        <UsageCount Value="5"/>
+      </Unit11>
+      <Unit12>
+        <Filename Value="W:\work\delphi\jobs\tacbord_sql\source\mpos\admin\MaterialCards.pas"/>
+        <TopLine Value="55"/>
+        <CursorPos X="15" Y="71"/>
+        <UsageCount Value="1"/>
+      </Unit12>
+      <Unit13>
+        <Filename Value="PlaceForms.pas"/>
+        <ComponentName Value="PlaceForm"/>
+        <ResourceBaseClass Value="Form"/>
+        <CursorPos X="34" Y="9"/>
+        <UsageCount Value="69"/>
+      </Unit13>
+      <Unit14>
+        <Filename Value="W:\home\pascal\lib\minilib\MiniConnection\db\mncSQL.pas"/>
+        <TopLine Value="35"/>
+        <CursorPos X="12" Y="65"/>
+        <UsageCount Value="3"/>
+      </Unit14>
+      <Unit15>
+        <Filename Value="V:\programs\lazarus\fpc\src\rtl\objpas\classes\classesh.inc"/>
+        <TopLine Value="236"/>
+        <CursorPos X="15" Y="254"/>
+        <UsageCount Value="1"/>
+      </Unit15>
+      <Unit16>
+        <Filename Value="V:\programs\lazarus\lcl\dialogs.pp"/>
+        <UnitName Value="Dialogs"/>
+        <TopLine Value="28"/>
+        <CursorPos X="56" Y="39"/>
+        <UsageCount Value="10"/>
+      </Unit16>
+      <Unit17>
+        <Filename Value="V:\programs\lazarus\lcl\include\buttons.inc"/>
+        <TopLine Value="223"/>
+        <CursorPos X="44" Y="241"/>
+        <UsageCount Value="10"/>
+      </Unit17>
+      <Unit18>
+        <Filename Value="W:\home\pascal\lib\minilib\MiniSocket\source\mnSockets.pas"/>
+        <TopLine Value="142"/>
+        <CursorPos X="41" Y="146"/>
+        <UsageCount Value="10"/>
+      </Unit18>
+      <Unit19>
+        <Filename Value="V:\programs\lazarus\ide\lazarus.pp"/>
+        <UnitName Value="Lazarus"/>
+        <TopLine Value="17"/>
+        <CursorPos X="30" Y="25"/>
+        <UsageCount Value="2"/>
+      </Unit19>
+      <Unit20>
+        <Filename Value="MaterialsForms.pas"/>
+        <ComponentName Value="MaterialsForm"/>
+        <HasResources Value="True"/>
+        <ResourceBaseClass Value="Form"/>
+        <TopLine Value="60"/>
+        <CursorPos X="23" Y="68"/>
+        <UsageCount Value="63"/>
+      </Unit20>
+      <Unit21>
+        <Filename Value="MaterialForms.pas"/>
+        <ComponentName Value="MaterialForm"/>
+        <HasResources Value="True"/>
+        <ResourceBaseClass Value="Form"/>
+        <UsageCount Value="50"/>
+      </Unit21>
+      <Unit22>
+        <Filename Value="MaterialForms.lrs"/>
+        <UsageCount Value="10"/>
+      </Unit22>
+      <Unit23>
+        <Filename Value="MaterialForms.lfm"/>
+        <CursorPos X="11" Y="2"/>
+        <UsageCount Value="10"/>
+        <DefaultSyntaxHighlighter Value="LFM"/>
+      </Unit23>
+      <Unit24>
+        <Filename Value="V:\programs\lazarus\components\fpweb\weblaz.pas"/>
+        <TopLine Value="7"/>
+        <CursorPos X="5" Y="23"/>
+        <UsageCount Value="10"/>
+      </Unit24>
+      <Unit25>
+        <Filename Value="C:\Program Files\Borland\Delphi7\Source\Internet\MSHTML.pas"/>
+        <UsageCount Value="10"/>
+      </Unit25>
+      <Unit26>
+        <Filename Value="V:\programs\lazarus\fpc\src\packages\winunits-base\src\richedit.pp"/>
+        <UsageCount Value="1"/>
+      </Unit26>
+      <Unit27>
+        <Filename Value="C:\Program Files\Borland\Delphi7\Source\Internet\SHDocVw.pas"/>
+        <UsageCount Value="1"/>
+      </Unit27>
+      <Unit28>
+        <Filename Value="..\lib\SHDocVw.pas"/>
+        <TopLine Value="9"/>
+        <CursorPos X="43" Y="27"/>
+        <UsageCount Value="1"/>
+      </Unit28>
+      <Unit29>
+        <Filename Value="..\lib\OleCtrls.pas"/>
+        <UsageCount Value="10"/>
+      </Unit29>
+      <Unit30>
+        <Filename Value="V:\programs\lazarus\fpc\src\packages\winunits-base\src\activex.pp"/>
+        <UnitName Value="ActiveX"/>
+        <UsageCount Value="5"/>
+      </Unit30>
+      <Unit31>
+        <Filename Value="C:\Program Files\Borland\Delphi7\Source\Vcl\OleCtrls.pas"/>
+        <UsageCount Value="10"/>
+      </Unit31>
+      <Unit32>
+        <Filename Value="..\lib\iebho.pas"/>
+        <TopLine Value="54"/>
+        <CursorPos X="35" Y="59"/>
+        <UsageCount Value="1"/>
+      </Unit32>
+      <Unit33>
+        <Filename Value="..\lib\UrlMon.pas"/>
+        <UsageCount Value="1"/>
+      </Unit33>
+      <Unit34>
+        <Filename Value="..\lib\MSHTML_TLB.pas"/>
+        <UsageCount Value="1"/>
+      </Unit34>
+      <Unit35>
+        <Filename Value="V:\programs\lazarus\components\codetools\keywordfunclists.pas"/>
+        <UnitName Value="KeywordFuncLists"/>
+        <TopLine Value="732"/>
+        <CursorPos X="18" Y="738"/>
+        <UsageCount Value="1"/>
+      </Unit35>
+      <Unit36>
+        <Filename Value="V:\programs\lazarus\fpc\src\compiler\globtype.pas"/>
+        <TopLine Value="273"/>
+        <CursorPos X="17" Y="280"/>
+        <UsageCount Value="1"/>
+      </Unit36>
+      <Unit37>
+        <Filename Value="V:\programs\lazarus\fpc\src\compiler\pdecsub.pas"/>
+        <TopLine Value="1918"/>
+        <CursorPos X="22" Y="1925"/>
+        <UsageCount Value="1"/>
+      </Unit37>
+      <Unit38>
+        <Filename Value="V:\programs\lazarus\fpc\src\compiler\psub.pas"/>
+        <TopLine Value="1055"/>
+        <CursorPos X="35" Y="1062"/>
+        <UsageCount Value="1"/>
+      </Unit38>
+      <Unit39>
+        <Filename Value="V:\programs\lazarus\fpc\src\compiler\vis\cpubase.pas"/>
+        <TopLine Value="518"/>
+        <CursorPos X="35" Y="525"/>
+        <UsageCount Value="1"/>
+      </Unit39>
+      <Unit40>
+        <Filename Value="V:\programs\lazarus\fpc\src\compiler\i386\cpubase.inc"/>
+        <UsageCount Value="1"/>
+      </Unit40>
+      <Unit41>
+        <Filename Value="V:\programs\lazarus\fpc\src\packages\winunits-base\src\oleserver.pp"/>
+        <UnitName Value="OleServer"/>
+        <UsageCount Value="5"/>
+      </Unit41>
+      <Unit42>
+        <Filename Value="V:\programs\lazarus\fpc\src\rtl\inc\variants.pp"/>
+        <TopLine Value="139"/>
+        <CursorPos X="13" Y="146"/>
+        <UsageCount Value="5"/>
+      </Unit42>
+      <Unit43>
+        <Filename Value="W:\home\pascal\lib\minilib\MiniXml\source\mnXMLUtils.pas"/>
+        <TopLine Value="41"/>
+        <CursorPos X="20" Y="59"/>
+        <UsageCount Value="3"/>
+      </Unit43>
+      <Unit44>
+        <Filename Value="V:\programs\lazarus\lcl\include\customcombobox.inc"/>
+        <TopLine Value="836"/>
+        <CursorPos Y="854"/>
+        <UsageCount Value="3"/>
+      </Unit44>
+      <Unit45>
+        <Filename Value="C:\Documents and Settings\Job\Desktop\1.html"/>
+        <CursorPos Y="3"/>
+        <UsageCount Value="3"/>
+        <DefaultSyntaxHighlighter Value="HTML"/>
+      </Unit45>
+      <Unit46>
+        <Filename Value="W:\work\delphi\jobs\tacbord_sql\source\lib\About.pas"/>
+        <TopLine Value="216"/>
+        <CursorPos X="19" Y="234"/>
+        <UsageCount Value="3"/>
+      </Unit46>
+      <Unit47>
+        <Filename Value="RequestsForms.lrs"/>
+        <UsageCount Value="1"/>
+      </Unit47>
+      <Unit48>
+        <Filename Value="RequestsForms.pas"/>
+        <ComponentName Value="RequestsForm"/>
+        <HasResources Value="True"/>
+        <ResourceBaseClass Value="Form"/>
+        <CursorPos X="31" Y="9"/>
+        <UsageCount Value="10"/>
+      </Unit48>
+      <Unit49>
+        <Filename Value="RequestForms.pas"/>
+        <ComponentName Value="RequestForm"/>
+        <HasResources Value="True"/>
+        <ResourceBaseClass Value="Form"/>
+        <TopLine Value="58"/>
+        <CursorPos X="3" Y="69"/>
+        <UsageCount Value="10"/>
+      </Unit49>
+      <Unit50>
+        <Filename Value="W:\work\delphi\lib\FreeMisc\LogFiles.pas"/>
+        <TopLine Value="81"/>
+        <CursorPos Y="111"/>
+        <UsageCount Value="1"/>
+      </Unit50>
+      <Unit51>
+        <Filename Value="W:\home\pascal\lib\minilib\MiniXml\source\mnXMLFPClasses.pas"/>
+        <TopLine Value="28"/>
+        <CursorPos X="31" Y="48"/>
+        <UsageCount Value="2"/>
+      </Unit51>
+      <Unit52>
+        <Filename Value="..\lib\ccsCommands.pas"/>
+        <TopLine Value="67"/>
+        <CursorPos Y="73"/>
+        <UsageCount Value="1"/>
+      </Unit52>
+      <Unit53>
+        <Filename Value="..\lib\ccsServerClasses.pas"/>
+        <TopLine Value="104"/>
+        <CursorPos X="3" Y="107"/>
+        <UsageCount Value="1"/>
+      </Unit53>
+      <Unit54>
+        <Filename Value="invnClasses.pas"/>
+        <CursorPos X="34" Y="5"/>
+        <UsageCount Value="2"/>
+      </Unit54>
+      <Unit55>
+        <Filename Value="invnSQLEngine.pas"/>
+        <UsageCount Value="5"/>
+        <Bookmarks Count="1">
+          <Item0 X="18" Y="546"/>
+        </Bookmarks>
+      </Unit55>
+      <Unit56>
+        <Filename Value="invnDBEngine.pas"/>
+        <UsageCount Value="4"/>
+      </Unit56>
+      <Unit57>
+        <Filename Value="..\..\CabCaller\source\admin\PlacesForms.pas"/>
+        <ComponentName Value="PlacesForm"/>
+        <HasResources Value="True"/>
+        <ResourceBaseClass Value="Form"/>
+        <CursorPos X="59" Y="14"/>
+        <UsageCount Value="1"/>
+      </Unit57>
+      <Unit58>
+        <Filename Value="..\..\CabCaller\source\admin\PlaceForms.pas"/>
+        <ComponentName Value="PlaceForm"/>
+        <HasResources Value="True"/>
+        <ResourceBaseClass Value="Form"/>
+        <CursorPos X="69" Y="14"/>
+        <UsageCount Value="1"/>
+      </Unit58>
+      <Unit59>
+        <Filename Value="OptionsForm.pas"/>
+        <ComponentName Value="OptionsFrm"/>
+        <ResourceBaseClass Value="Form"/>
+        <CursorPos X="18" Y="2"/>
+        <UsageCount Value="1"/>
+      </Unit59>
+      <Unit60>
+        <Filename Value="OptionsForms.pas"/>
+        <IsPartOfProject Value="True"/>
+        <ComponentName Value="OptionsForm"/>
+        <HasResources Value="True"/>
+        <ResourceBaseClass Value="Form"/>
+        <EditorIndex Value="5"/>
+        <TopLine Value="47"/>
+        <CursorPos Y="71"/>
+        <UsageCount Value="202"/>
+        <Loaded Value="True"/>
+        <LoadedDesigner Value="True"/>
+      </Unit60>
+      <Unit61>
+        <Filename Value="W:\home\pascal\lib\minilib\MiniSocket\source\mnClients.pas"/>
+        <TopLine Value="85"/>
+        <CursorPos Y="85"/>
+        <UsageCount Value="7"/>
+      </Unit61>
+      <Unit62>
+        <Filename Value="W:\home\pascal\lib\minilib\MiniConnection\source\mncCSV.pas"/>
+        <TopLine Value="209"/>
+        <CursorPos X="56" Y="215"/>
+        <UsageCount Value="8"/>
+      </Unit62>
+      <Unit63>
+        <Filename Value="W:\programs\lazarus\fpc\src\rtl\inc\wstring22h.inc"/>
+        <TopLine Value="66"/>
+        <CursorPos X="55" Y="87"/>
+        <UsageCount Value="2"/>
+      </Unit63>
+      <Unit64>
+        <Filename Value="HostForms.pas"/>
+        <ComponentName Value="HostForm"/>
+        <ResourceBaseClass Value="Form"/>
+        <TopLine Value="17"/>
+        <CursorPos X="7" Y="33"/>
+        <UsageCount Value="33"/>
+      </Unit64>
+      <Unit65>
+        <Filename Value="W:\programs\lazarus\lcl\fileutil.pas"/>
+        <UnitName Value="FileUtil"/>
+        <TopLine Value="178"/>
+        <CursorPos X="10" Y="191"/>
+        <UsageCount Value="3"/>
+      </Unit65>
+      <Unit66>
+        <Filename Value="W:\programs\lazarus\lcl\include\fileutil.inc"/>
+        <TopLine Value="85"/>
+        <CursorPos Y="108"/>
+        <UsageCount Value="3"/>
+      </Unit66>
+      <Unit67>
+        <Filename Value="W:\programs\lazarus\fpc\src\rtl\objpas\classes\classesh.inc"/>
+        <TopLine Value="1841"/>
+        <CursorPos Y="1884"/>
+        <UsageCount Value="2"/>
+      </Unit67>
+      <Unit68>
+        <Filename Value="W:\programs\lazarus\lcl\intfgraphics.pas"/>
+        <UnitName Value="IntfGraphics"/>
+        <TopLine Value="2474"/>
+        <CursorPos X="56" Y="2485"/>
+        <UsageCount Value="2"/>
+      </Unit68>
+      <Unit69>
+        <Filename Value="W:\programs\lazarus\lcl\include\customlistbox.inc"/>
+        <TopLine Value="536"/>
+        <CursorPos Y="557"/>
+        <UsageCount Value="2"/>
+      </Unit69>
+      <Unit70>
+        <Filename Value="W:\programs\lazarus\lcl\interfaces\win32\win32listsl.inc"/>
+        <TopLine Value="206"/>
+        <CursorPos Y="228"/>
+        <UsageCount Value="2"/>
+      </Unit70>
+      <Unit71>
+        <Filename Value="W:\programs\lazarus\lcl\include\control.inc"/>
+        <TopLine Value="2073"/>
+        <CursorPos Y="2095"/>
+        <UsageCount Value="2"/>
+      </Unit71>
+      <Unit72>
+        <Filename Value="W:\programs\lazarus\lcl\include\buttoncontrol.inc"/>
+        <TopLine Value="31"/>
+        <CursorPos X="72" Y="51"/>
+        <UsageCount Value="2"/>
+      </Unit72>
+      <Unit73>
+        <Filename Value="W:\programs\lazarus\fpc\src\rtl\objpas\classes\classes.inc"/>
+        <TopLine Value="231"/>
+        <CursorPos X="3" Y="275"/>
+        <UsageCount Value="2"/>
+      </Unit73>
+      <Unit74>
+        <Filename Value="W:\home\pascal\lib\minilib\Commons\mnUtils.pas"/>
+        <TopLine Value="22"/>
+        <CursorPos X="22" Y="22"/>
+        <UsageCount Value="2"/>
+      </Unit74>
+      <Unit75>
+        <Filename Value="W:\programs\fpc\src\rtl\win\wininc\defines.inc"/>
+        <TopLine Value="420"/>
+        <CursorPos X="6" Y="443"/>
+        <UsageCount Value="3"/>
+      </Unit75>
+      <Unit76>
+        <Filename Value="W:\programs\fpc\src\rtl\palmos\systraps.pp"/>
+        <TopLine Value="426"/>
+        <CursorPos X="30" Y="435"/>
+        <UsageCount Value="3"/>
+      </Unit76>
+      <Unit77>
+        <Filename Value="W:\programs\fpc\src\packages\winceunits\src\rapi.pp"/>
+        <UnitName Value="RAPI"/>
+        <TopLine Value="923"/>
+        <CursorPos X="23" Y="935"/>
+        <UsageCount Value="3"/>
+      </Unit77>
+      <Unit78>
+        <Filename Value="W:\programs\fpc\src\rtl\win\wininc\ascdef.inc"/>
+        <UsageCount Value="3"/>
+      </Unit78>
+      <Unit79>
+        <Filename Value="W:\programs\fpc\src\rtl\inc\heaph.inc"/>
+        <TopLine Value="56"/>
+        <CursorPos X="11" Y="67"/>
+        <UsageCount Value="3"/>
+      </Unit79>
+      <Unit80>
+        <Filename Value="W:\programs\lazarus\lcl\lcltype.pp"/>
+        <UnitName Value="LCLType"/>
+        <TopLine Value="2920"/>
+        <CursorPos X="15" Y="2924"/>
+        <UsageCount Value="2"/>
+      </Unit80>
+      <Unit81>
+        <Filename Value="W:\programs\lazarus\lcl\forms.pp"/>
+        <UnitName Value="Forms"/>
+        <TopLine Value="56"/>
+        <CursorPos X="27" Y="69"/>
+        <UsageCount Value="2"/>
+      </Unit81>
+      <Unit82>
+        <Filename Value="W:\programs\lazarus\lcl\include\application.inc"/>
+        <TopLine Value="85"/>
+        <CursorPos X="9" Y="100"/>
+        <UsageCount Value="2"/>
+      </Unit82>
+      <Unit83>
+        <Filename Value="W:\programs\lazarus\lcl\include\hintwindow.inc"/>
+        <TopLine Value="165"/>
+        <CursorPos X="21" Y="192"/>
+        <UsageCount Value="2"/>
+      </Unit83>
+      <Unit84>
+        <Filename Value="W:\home\pascal\lib\chops\lazarus\CurrencyEditor.pas"/>
+        <ComponentName Value="CurrencyEditForm"/>
+        <HasResources Value="True"/>
+        <ResourceBaseClass Value="Form"/>
+        <TopLine Value="79"/>
+        <CursorPos X="26" Y="119"/>
+        <UsageCount Value="2"/>
+      </Unit84>
+      <Unit85>
+        <Filename Value="W:\home\pascal\lib\chops\lazarus\DateEditor.pas"/>
+        <ComponentName Value="DateEditForm"/>
+        <HasResources Value="True"/>
+        <ResourceBaseClass Value="Form"/>
+        <TopLine Value="72"/>
+        <CursorPos X="22" Y="112"/>
+        <UsageCount Value="2"/>
+      </Unit85>
+      <Unit86>
+        <Filename Value="W:\home\pascal\lib\chops\lazarus\IntegerEditor.pas"/>
+        <ComponentName Value="IntegerEditForm"/>
+        <HasResources Value="True"/>
+        <ResourceBaseClass Value="Form"/>
+        <TopLine Value="2"/>
+        <CursorPos X="15" Y="11"/>
+        <UsageCount Value="2"/>
+      </Unit86>
+      <Unit87>
+        <Filename Value="W:\home\pascal\lib\chops\lazarus\ParserDesign.pas"/>
+        <ComponentName Value="ParserDesignForm"/>
+        <HasResources Value="True"/>
+        <ResourceBaseClass Value="Form"/>
+        <TopLine Value="131"/>
+        <CursorPos X="25" Y="139"/>
+        <UsageCount Value="2"/>
+      </Unit87>
+      <Unit88>
+        <Filename Value="W:\home\pascal\lib\chops\lazarus\SelectParserItem.pas"/>
+        <ComponentName Value="SelectForm"/>
+        <HasResources Value="True"/>
+        <ResourceBaseClass Value="Form"/>
+        <CursorPos Y="9"/>
+        <UsageCount Value="2"/>
+        <Bookmarks Count="1">
+          <Item0 X="7" Y="58" ID="1"/>
+        </Bookmarks>
+      </Unit88>
+      <Unit89>
+        <Filename Value="W:\home\pascal\lib\chops\lazarus\StringEditor.pas"/>
+        <ComponentName Value="StringEditForm"/>
+        <HasResources Value="True"/>
+        <ResourceBaseClass Value="Form"/>
+        <CursorPos X="15" Y="11"/>
+        <UsageCount Value="2"/>
+      </Unit89>
+      <Unit90>
+        <Filename Value="W:\home\pascal\lib\chops\lazarus\TimeEditor.pas"/>
+        <ComponentName Value="TimeEditForm"/>
+        <HasResources Value="True"/>
+        <ResourceBaseClass Value="Form"/>
+        <CursorPos X="15" Y="11"/>
+        <UsageCount Value="2"/>
+      </Unit90>
+      <Unit91>
+        <Filename Value="W:\home\pascal\lib\chops\source\ChopParser.pas"/>
+        <CursorPos Y="8"/>
+        <UsageCount Value="2"/>
+      </Unit91>
+      <Unit92>
+        <Filename Value="W:\home\pascal\lib\chops\source\ChopEditor.pas"/>
+        <CursorPos Y="7"/>
+        <UsageCount Value="2"/>
+      </Unit92>
+      <Unit93>
+        <Filename Value="W:\home\pascal\lib\minilib\MiniSocket\source\mnWin32Sockets.pas"/>
+        <UsageCount Value="2"/>
+      </Unit93>
+      <Unit94>
+        <Filename Value="W:\home\pascal\lib\pos\source\posUtils.pas"/>
+        <TopLine Value="27"/>
+        <CursorPos Y="27"/>
+        <UsageCount Value="2"/>
+      </Unit94>
+      <Unit95>
+        <Filename Value="invnSqlUtils.pas"/>
+        <CursorPos X="6"/>
+        <UsageCount Value="2"/>
+      </Unit95>
+      <Unit96>
+        <Filename Value="OptionsForm.lrs"/>
+        <CursorPos X="11"/>
+        <UsageCount Value="2"/>
+      </Unit96>
+      <Unit97>
+        <Filename Value="W:\home\pascal\lib\chops\lazarus\StringEditor.lrs"/>
+        <TopLine Value="7"/>
+        <CursorPos Y="32"/>
+        <UsageCount Value="2"/>
+      </Unit97>
+      <Unit98>
+        <Filename Value="W:\home\pascal\lib\chops\lazarus\TimeEditor.lrs"/>
+        <TopLine Value="9"/>
+        <CursorPos Y="34"/>
+        <UsageCount Value="2"/>
+      </Unit98>
+      <Unit99>
+        <Filename Value="D:\Desktop\33.csv"/>
+        <CursorPos X="59" Y="2"/>
+        <UsageCount Value="2"/>
+        <DefaultSyntaxHighlighter Value="None"/>
+      </Unit99>
+      <Unit100>
+        <Filename Value="W:\home\pascal\lib\minilib\MiniConnection\db\sqlite\mncSQLite.pas"/>
+        <TopLine Value="490"/>
+        <CursorPos X="43" Y="510"/>
+        <UsageCount Value="4"/>
+        <Bookmarks Count="1">
+          <Item0 Y="107" ID="2"/>
+        </Bookmarks>
+      </Unit100>
+      <Unit101>
+        <Filename Value="W:\lib\mposSqlUtils.pas"/>
+        <UsageCount Value="2"/>
+      </Unit101>
+      <Unit102>
+        <Filename Value="W:\home\pascal\lib\minilib\MiniSocket\source\mnSocketStreams.pas"/>
+        <TopLine Value="313"/>
+        <CursorPos X="3" Y="313"/>
+        <UsageCount Value="2"/>
+      </Unit102>
+      <Unit103>
+        <Filename Value="W:\home\pascal\lib\minilib\Commons\mnStreams.pas"/>
+        <TopLine Value="23"/>
+        <CursorPos X="16" Y="23"/>
+        <UsageCount Value="2"/>
+      </Unit103>
+      <Unit104>
+        <Filename Value="D:\Desktop\555.csv"/>
+        <UsageCount Value="2"/>
+        <DefaultSyntaxHighlighter Value="None"/>
+      </Unit104>
+      <Unit105>
+        <Filename Value="..\units\MaterialsForms.lrs"/>
+        <UsageCount Value="2"/>
+      </Unit105>
+      <Unit106>
+        <Filename Value="..\units\OptionsForms.lrs"/>
+        <CursorPos X="31" Y="9"/>
+        <UsageCount Value="2"/>
+      </Unit106>
+      <Unit107>
+        <Filename Value="..\units\MainForms.lrs"/>
+        <UsageCount Value="2"/>
+      </Unit107>
+      <Unit108>
+        <Filename Value="..\units\HostForms.lrs"/>
+        <UsageCount Value="2"/>
+      </Unit108>
+      <Unit109>
+        <Filename Value="W:\programs\lazarus\lcl\controls.pp"/>
+        <UnitName Value="Controls"/>
+        <UsageCount Value="2"/>
+      </Unit109>
+      <Unit110>
+        <Filename Value="W:\home\pascal\lib\minilib\pos\source\posControls.pas"/>
+        <TopLine Value="110"/>
+        <CursorPos X="5" Y="129"/>
+        <UsageCount Value="7"/>
+      </Unit110>
+      <Unit111>
+        <Filename Value="V:\programs\FPC\2.2.4\src\packages\sqlite\src\sqlite3.inc"/>
+        <TopLine Value="43"/>
+        <CursorPos X="3" Y="43"/>
+        <UsageCount Value="3"/>
+      </Unit111>
+      <Unit112>
+        <Filename Value="V:\programs\FPC\2.4\src\packages\fcl-db\src\sqldb\sqlite\sqlite3conn.pp"/>
+        <TopLine Value="332"/>
+        <CursorPos X="19" Y="352"/>
+        <UsageCount Value="3"/>
+      </Unit112>
+      <Unit113>
+        <Filename Value="V:\programs\FPC\2.4\src\packages\fcl-db\src\sqlite\sqlite3ds.pas"/>
+        <UnitName Value="Sqlite3DS"/>
+        <TopLine Value="234"/>
+        <CursorPos X="40" Y="244"/>
+        <UsageCount Value="3"/>
+      </Unit113>
+      <Unit114>
+        <Filename Value="V:\programs\FPC\2.2.4\src\rtl\objpas\strutils.pp"/>
+        <TopLine Value="1179"/>
+        <CursorPos X="3" Y="1199"/>
+        <UsageCount Value="3"/>
+      </Unit114>
+      <Unit115>
+        <Filename Value="V:\programs\FPC\2.4\src\packages\sqlite\src\sqlite3.inc"/>
+        <TopLine Value="3024"/>
+        <CursorPos X="36" Y="3034"/>
+        <UsageCount Value="3"/>
+      </Unit115>
+      <Unit116>
+        <Filename Value="w:\home\pascal\lib\minilib\lib\mnFields.pas"/>
+        <TopLine Value="124"/>
+        <CursorPos X="81" Y="138"/>
+        <UsageCount Value="9"/>
+      </Unit116>
+      <Unit117>
+        <Filename Value="D:\Desktop\1.csv"/>
+        <UsageCount Value="3"/>
+        <DefaultSyntaxHighlighter Value="None"/>
+      </Unit117>
+      <Unit118>
+        <Filename Value="D:\Users\Job\Desktop\111.csv"/>
+        <UsageCount Value="3"/>
+        <DefaultSyntaxHighlighter Value="None"/>
+      </Unit118>
+      <Unit119>
+        <Filename Value="W:\home\pascal\lib\minilib\pos\source\posUtils.pas"/>
+        <UsageCount Value="3"/>
+      </Unit119>
+      <Unit120>
+        <Filename Value="clctDBEngine.pas"/>
+        <EditorIndex Value="-1"/>
+        <CursorPos X="3" Y="14"/>
+        <UsageCount Value="133"/>
+      </Unit120>
+      <Unit121>
+        <Filename Value="clctClasses.pas"/>
+        <EditorIndex Value="-1"/>
+        <CursorPos Y="13"/>
+        <UsageCount Value="3"/>
+      </Unit121>
+      <Unit122>
+        <Filename Value="clctSqlUtils.pas"/>
+        <EditorIndex Value="-1"/>
+        <UsageCount Value="11"/>
+      </Unit122>
+      <Unit123>
+        <Filename Value="clctSQLEngine.pas"/>
+        <EditorIndex Value="-1"/>
+        <TopLine Value="126"/>
+        <CursorPos X="48" Y="139"/>
+        <UsageCount Value="142"/>
+        <Bookmarks Count="1">
+          <Item0 Y="384" ID="1"/>
+        </Bookmarks>
+      </Unit123>
+      <Unit124>
+        <Filename Value="w:\home\pascal\lib\minilib\connection\db\sqlite\mncSQLite.pas"/>
+        <EditorIndex Value="-1"/>
+        <TopLine Value="436"/>
+        <CursorPos X="14" Y="445"/>
+        <UsageCount Value="8"/>
+        <Bookmarks Count="2">
+          <Item0 X="40" Y="659" ID="2"/>
+          <Item1 Y="418" ID="1"/>
+        </Bookmarks>
+      </Unit124>
+      <Unit125>
+        <Filename Value="w:\home\pascal\lib\minilib\connection\source\mncCSV.pas"/>
+        <EditorIndex Value="-1"/>
+        <TopLine Value="213"/>
+        <CursorPos X="18" Y="217"/>
+        <UsageCount Value="10"/>
+      </Unit125>
+      <Unit126>
+        <Filename Value="W:\home\pascal\lib\minilib\lib\mnStreams.pas"/>
+        <TopLine Value="155"/>
+        <CursorPos X="29" Y="167"/>
+        <UsageCount Value="3"/>
+      </Unit126>
+      <Unit127>
+        <Filename Value="w:\home\pascal\lib\minilib\connection\source\mncConnections.pas"/>
+        <EditorIndex Value="-1"/>
+        <TopLine Value="638"/>
+        <CursorPos X="36" Y="647"/>
+        <UsageCount Value="5"/>
+      </Unit127>
+      <Unit128>
+        <Filename Value="W:\home\pascal\lib\minilib\lib\mnUtils.pas"/>
+        <TopLine Value="108"/>
+        <CursorPos Y="134"/>
+        <UsageCount Value="7"/>
+      </Unit128>
+      <Unit129>
+        <Filename Value="W:\home\pascal\lib\minilib\connection\source\mncCSVExchanges.pas"/>
+        <TopLine Value="374"/>
+        <CursorPos X="53" Y="398"/>
+        <UsageCount Value="5"/>
+      </Unit129>
+      <Unit130>
+        <Filename Value="W:\home\pascal\lib\minilib\pos\source\posLists.pas"/>
+        <CursorPos X="3" Y="22"/>
+        <UsageCount Value="4"/>
+      </Unit130>
+      <Unit131>
+        <Filename Value="W:\home\pascal\lib\minilib\pos\source\posGrids.pas"/>
+        <UsageCount Value="4"/>
+      </Unit131>
+      <Unit132>
+        <Filename Value="W:\home\pascal\lib\minilib\pos\source\posStuffs.pas"/>
+        <TopLine Value="932"/>
+        <CursorPos X="49" Y="946"/>
+        <UsageCount Value="5"/>
+      </Unit132>
+      <Unit133>
+        <Filename Value="P:\programs\fpc\2.4\src\rtl\objpas\sysutils\datih.inc"/>
+        <TopLine Value="27"/>
+        <CursorPos X="20" Y="43"/>
+        <UsageCount Value="8"/>
+      </Unit133>
+      <Unit134>
+        <Filename Value="P:\programs\fpc\2.4\src\rtl\objpas\sysutils\dati.inc"/>
+        <TopLine Value="60"/>
+        <CursorPos X="3" Y="62"/>
+        <UsageCount Value="8"/>
+      </Unit134>
+      <Unit135>
+        <Filename Value="P:\programs\fpc\2.4\src\rtl\objpas\dateutils.pp"/>
+        <CursorPos X="5"/>
+        <UsageCount Value="8"/>
+      </Unit135>
+      <Unit136>
+        <Filename Value="P:\programs\fpc\2.4\src\rtl\objpas\dateutil.inc"/>
+        <TopLine Value="703"/>
+        <CursorPos X="22" Y="729"/>
+        <UsageCount Value="8"/>
+      </Unit136>
+      <Unit137>
+        <Filename Value="P:\programs\fpc\2.4\src\rtl\inc\varianth.inc"/>
+        <TopLine Value="67"/>
+        <CursorPos X="45" Y="93"/>
+        <UsageCount Value="5"/>
+      </Unit137>
+      <Unit138>
+        <Filename Value="W:\programs\lazarus\lcl\interfaces\gtk2\gtk2widgetset.inc"/>
+        <TopLine Value="1884"/>
+        <CursorPos X="24" Y="1909"/>
+        <UsageCount Value="5"/>
+      </Unit138>
+      <Unit139>
+        <Filename Value="W:\programs\lazarus\lcl\interfaces\wince\winceobject.inc"/>
+        <TopLine Value="176"/>
+        <CursorPos X="20" Y="186"/>
+        <UsageCount Value="5"/>
+      </Unit139>
+      <Unit140>
+        <Filename Value="W:\programs\lazarus\ide\fpcsrcscan.pas"/>
+        <UnitName Value="FPCSrcScan"/>
+        <TopLine Value="32"/>
+        <CursorPos X="51" Y="39"/>
+        <UsageCount Value="5"/>
+      </Unit140>
+      <Unit141>
+        <Filename Value="W:\home\pascal\lib\minilib\xml\source\mnXMLUtils.pas"/>
+        <TopLine Value="47"/>
+        <CursorPos Y="62"/>
+        <UsageCount Value="5"/>
+      </Unit141>
+      <Unit142>
+        <Filename Value="P:\programs\fpc\2.4\src\rtl\objpas\sysutils\filutilh.inc"/>
+        <TopLine Value="40"/>
+        <CursorPos X="19" Y="62"/>
+        <UsageCount Value="8"/>
+      </Unit142>
+      <Unit143>
+        <Filename Value="..\csv\White_2.csv"/>
+        <UsageCount Value="5"/>
+        <DefaultSyntaxHighlighter Value="None"/>
+      </Unit143>
+      <Unit144>
+        <Filename Value="..\csv\White.csv"/>
+        <UsageCount Value="5"/>
+        <DefaultSyntaxHighlighter Value="None"/>
+      </Unit144>
+      <Unit145>
+        <Filename Value="P:\programs\fpc\2.4.-\src\rtl\objpas\classes\classesh.inc"/>
+        <TopLine Value="822"/>
+        <CursorPos X="41" Y="836"/>
+        <UsageCount Value="5"/>
+      </Unit145>
+      <Unit146>
+        <Filename Value="P:\programs\fpc\2.4.-\src\rtl\inc\objpash.inc"/>
+        <TopLine Value="224"/>
+        <CursorPos X="34" Y="238"/>
+        <UsageCount Value="5"/>
+      </Unit146>
+      <Unit147>
+        <Filename Value="W:\home\pascal\lib\minilib\xml\source\mnXMLRttiProfile.pas"/>
+        <CursorPos X="35" Y="9"/>
+        <UsageCount Value="5"/>
+      </Unit147>
+      <Unit148>
+        <Filename Value="w:\home\pascal\lib\minilib\connection\db\sqlite\mncSQLiteHeader.pas"/>
+        <EditorIndex Value="-1"/>
+        <TopLine Value="460"/>
+        <CursorPos X="3" Y="467"/>
+        <UsageCount Value="7"/>
+      </Unit148>
+      <Unit149>
+        <Filename Value="P:\programs\fpc\2.4\src\packages\sqlite\src\sqlite3.pp"/>
+        <UsageCount Value="5"/>
+      </Unit149>
+      <Unit150>
+        <Filename Value="P:\programs\fpc\2.4\src\packages\sqlite\src\sqlite3.inc"/>
+        <UsageCount Value="5"/>
+      </Unit150>
+      <Unit151>
+        <Filename Value="W:\home\pascal\lib\minilib\connection\db\sqlite\sqlite3.inc"/>
+        <UsageCount Value="5"/>
+      </Unit151>
+      <Unit152>
+        <Filename Value="P:\programs\fpc\2.4\src\rtl\inc\dynlibs.pas"/>
+        <UsageCount Value="5"/>
+      </Unit152>
+      <Unit153>
+        <Filename Value="w:\home\pascal\lib\minilib\connection\ref\SLDataSet.pas"/>
+        <CursorPos X="5" Y="17"/>
+        <UsageCount Value="5"/>
+      </Unit153>
+      <Unit154>
+        <Filename Value="w:\home\pascal\lib\minilib\lazarus\components\db\mncDS.pp"/>
+        <TopLine Value="335"/>
+        <CursorPos Y="351"/>
+        <UsageCount Value="5"/>
+      </Unit154>
+      <Unit155>
+        <Filename Value="w:\home\pascal\lib\minilib\barcode\doc\tpsystools\tpsystools-code\source\StExport.pas"/>
+        <UsageCount Value="5"/>
+      </Unit155>
+      <Unit156>
+        <Filename Value="P:\dev\lazarus\lcl\include\application.inc"/>
+        <EditorIndex Value="-1"/>
+        <TopLine Value="2334"/>
+        <CursorPos Y="2363"/>
+        <UsageCount Value="7"/>
+      </Unit156>
+      <Unit157>
+        <Filename Value="m:\home\pascal\lib\minilib\connection\db\sqlite\mncSQLite.pas"/>
+        <EditorIndex Value="-1"/>
+        <TopLine Value="25"/>
+        <CursorPos X="17" Y="40"/>
+        <UsageCount Value="76"/>
+      </Unit157>
+      <Unit158>
+        <Filename Value="..\data\init.sql"/>
+        <EditorIndex Value="-1"/>
+        <CursorPos X="19"/>
+        <UsageCount Value="78"/>
+        <DefaultSyntaxHighlighter Value="SQL"/>
+      </Unit158>
+      <Unit159>
+        <Filename Value="CSVIEForms.pas"/>
+        <ComponentName Value="CSVIEForm"/>
+        <HasResources Value="True"/>
+        <ResourceBaseClass Value="Form"/>
+        <EditorIndex Value="-1"/>
+        <TopLine Value="21"/>
+        <CursorPos X="15" Y="34"/>
+        <UsageCount Value="200"/>
+        <Bookmarks Count="1">
+          <Item0 Y="313" ID="2"/>
+        </Bookmarks>
+      </Unit159>
+      <Unit160>
+        <Filename Value="m:\home\pascal\lib\minilib\connection\source\mncCSVExchanges.pas"/>
+        <EditorIndex Value="-1"/>
+        <TopLine Value="313"/>
+        <CursorPos X="27" Y="325"/>
+        <UsageCount Value="23"/>
+      </Unit160>
+      <Unit161>
+        <Filename Value="M:\home\pascal\projects\miniSQLViewer\gui\CSVIEForms.pas"/>
+        <EditorIndex Value="-1"/>
+        <UsageCount Value="8"/>
+      </Unit161>
+      <Unit162>
+        <Filename Value="M:\home\pascal\projects\miniSQLViewer\gui\sqlvStdClasses.pas"/>
+        <EditorIndex Value="-1"/>
+        <UsageCount Value="8"/>
+      </Unit162>
+      <Unit163>
+        <Filename Value="M:\home\pascal\projects\miniSQLViewer\lib\sqlvSQLForms.pas"/>
+        <UnitName Value="fbvSQLForms"/>
+        <EditorIndex Value="-1"/>
+        <TopLine Value="37"/>
+        <CursorPos X="42" Y="42"/>
+        <UsageCount Value="5"/>
+      </Unit163>
+      <Unit164>
+        <Filename Value="D:\dev\fpc\2.6\src\rtl\objpas\classes\classesh.inc"/>
+        <EditorIndex Value="-1"/>
+        <TopLine Value="306"/>
+        <CursorPos X="72" Y="320"/>
+        <UsageCount Value="28"/>
+      </Unit164>
+      <Unit165>
+        <Filename Value="D:\dev\lazarus\lcl\stdctrls.pp"/>
+        <UnitName Value="StdCtrls"/>
+        <EditorIndex Value="-1"/>
+        <TopLine Value="1065"/>
+        <CursorPos X="14" Y="1080"/>
+        <UsageCount Value="3"/>
+      </Unit165>
+      <Unit166>
+        <Filename Value="M:\home\pascal\lib\minilib\lib\mnStreams.pas"/>
+        <EditorIndex Value="-1"/>
+        <CursorPos X="15"/>
+        <UsageCount Value="5"/>
+      </Unit166>
+      <Unit167>
+        <Filename Value="m:\home\pascal\lib\minilib\connection\source\mncCSV.pas"/>
+        <EditorIndex Value="-1"/>
+        <TopLine Value="293"/>
+        <CursorPos X="62" Y="313"/>
+        <UsageCount Value="24"/>
+      </Unit167>
+      <Unit168>
+        <Filename Value="M:\home\pascal\lib\minilib\lib\MsgBox.pp"/>
+        <EditorIndex Value="-1"/>
+        <TopLine Value="291"/>
+        <CursorPos X="40" Y="292"/>
+        <UsageCount Value="8"/>
+      </Unit168>
+      <Unit169>
+        <Filename Value="M:\home\pascal\lib\minilib\lazarus\lib\GUIMsgBox.pp"/>
+        <EditorIndex Value="-1"/>
+        <TopLine Value="496"/>
+        <CursorPos Y="522"/>
+        <UsageCount Value="8"/>
+      </Unit169>
+      <Unit170>
+        <Filename Value="D:\dev\fpc\2.6\src\rtl\objpas\typinfo.pp"/>
+        <EditorIndex Value="-1"/>
+        <TopLine Value="909"/>
+        <CursorPos X="19" Y="925"/>
+        <UsageCount Value="7"/>
+      </Unit170>
+      <Unit171>
+        <Filename Value="M:\home\pascal\lib\minilib\xml\source\mnXML.pas"/>
+        <EditorIndex Value="-1"/>
+        <TopLine Value="148"/>
+        <CursorPos X="14" Y="158"/>
+        <UsageCount Value="10"/>
+        <DefaultSyntaxHighlighter Value="Delphi"/>
+      </Unit171>
+      <Unit172>
+        <Filename Value="M:\home\pascal\lib\minilib\lib\mnUtils.pas"/>
+        <EditorIndex Value="-1"/>
+        <TopLine Value="729"/>
+        <CursorPos X="21" Y="756"/>
+        <UsageCount Value="24"/>
+      </Unit172>
+      <Unit173>
+        <Filename Value="m:\home\pascal\lib\minilib\connection\source\mncConnections.pas"/>
+        <EditorIndex Value="-1"/>
+        <TopLine Value="828"/>
+        <CursorPos Y="850"/>
+        <UsageCount Value="77"/>
+      </Unit173>
+      <Unit174>
+        <Filename Value="M:\home\pascal\lib\minilib\lib\mnFields.pas"/>
+        <EditorIndex Value="-1"/>
+        <TopLine Value="105"/>
+        <CursorPos X="5" Y="121"/>
+        <UsageCount Value="19"/>
+      </Unit174>
+      <Unit175>
+        <Filename Value="D:\dev\fpc\2.6\src\rtl\inc\systemh.inc"/>
+        <EditorIndex Value="-1"/>
+        <TopLine Value="955"/>
+        <CursorPos X="11" Y="966"/>
+        <UsageCount Value="9"/>
+      </Unit175>
+      <Unit176>
+        <Filename Value="M:\home\pascal\lib\minilib\socket\source\mnSocketStreams.pas"/>
+        <EditorIndex Value="-1"/>
+        <CursorPos X="41" Y="16"/>
+        <UsageCount Value="8"/>
+      </Unit176>
+      <Unit177>
+        <Filename Value="M:\home\pascal\lib\minilib\socket\source\mnSockets.pas"/>
+        <EditorIndex Value="-1"/>
+        <UsageCount Value="8"/>
+      </Unit177>
+      <Unit178>
+        <Filename Value="M:\home\pascal\lib\minilib\xml\source\mnXMLReader.pas"/>
+        <EditorIndex Value="-1"/>
+        <TopLine Value="34"/>
+        <CursorPos Y="34"/>
+        <UsageCount Value="10"/>
+        <DefaultSyntaxHighlighter Value="Delphi"/>
+      </Unit178>
+      <Unit179>
+        <Filename Value="..\zip.cmd"/>
+        <EditorIndex Value="-1"/>
+        <CursorPos Y="5"/>
+        <UsageCount Value="5"/>
+        <DefaultSyntaxHighlighter Value="None"/>
+      </Unit179>
+      <Unit180>
+        <Filename Value="D:\dev\lazarus\lcl\filectrl.pp"/>
+        <UnitName Value="FileCtrl"/>
+        <EditorIndex Value="-1"/>
+        <TopLine Value="57"/>
+        <CursorPos X="29" Y="70"/>
+        <UsageCount Value="7"/>
+      </Unit180>
+      <Unit181>
+        <Filename Value="D:\dev\lazarus\components\lazutils\masks.pas"/>
+        <UnitName Value="Masks"/>
+        <EditorIndex Value="-1"/>
+        <TopLine Value="139"/>
+        <CursorPos X="16" Y="143"/>
+        <UsageCount Value="7"/>
+      </Unit181>
+      <Unit182>
+        <Filename Value="D:\dev\fpc\2.6\src\rtl\objpas\sysutils\filutilh.inc"/>
+        <EditorIndex Value="-1"/>
+        <TopLine Value="8"/>
+        <CursorPos X="12" Y="20"/>
+        <UsageCount Value="7"/>
+      </Unit182>
+      <Unit183>
+        <Filename Value="D:\dev\lazarus\lcl\menus.pp"/>
+        <UnitName Value="Menus"/>
+        <EditorIndex Value="-1"/>
+        <TopLine Value="226"/>
+        <CursorPos X="15" Y="235"/>
+        <UsageCount Value="7"/>
+      </Unit183>
+      <Unit184>
+        <Filename Value="D:\dev\lazarus\lcl\include\menuitem.inc"/>
+        <EditorIndex Value="-1"/>
+        <TopLine Value="911"/>
+        <CursorPos X="14" Y="920"/>
+        <UsageCount Value="7"/>
+      </Unit184>
+      <Unit185>
+        <Filename Value="D:\dev\lazarus\components\synedit\synedit.pp"/>
+        <UnitName Value="SynEdit"/>
+        <EditorIndex Value="-1"/>
+        <TopLine Value="880"/>
+        <CursorPos X="15" Y="890"/>
+        <UsageCount Value="13"/>
+      </Unit185>
+      <Unit186>
+        <Filename Value="M:\home\pascal\lib\minilib\lib\UniDates.pas"/>
+        <EditorIndex Value="-1"/>
+        <TopLine Value="119"/>
+        <CursorPos X="25" Y="134"/>
+        <UsageCount Value="5"/>
+      </Unit186>
+      <Unit187>
+        <Filename Value="D:\dev\fpc\2.6\src\rtl\win32\classes.pp"/>
+        <UnitName Value="Classes"/>
+        <EditorIndex Value="-1"/>
+        <UsageCount Value="9"/>
+      </Unit187>
+      <Unit188>
+        <Filename Value="D:\dev\lazarus\lcl\grids.pas"/>
+        <UnitName Value="Grids"/>
+        <EditorIndex Value="-1"/>
+        <TopLine Value="114"/>
+        <CursorPos X="49" Y="124"/>
+        <UsageCount Value="15"/>
+      </Unit188>
+      <Unit189>
+        <Filename Value="D:\dev\fpc\2.6\src\rtl\objpas\classes\streams.inc"/>
+        <EditorIndex Value="-1"/>
+        <TopLine Value="449"/>
+        <CursorPos X="33" Y="456"/>
+        <UsageCount Value="10"/>
+      </Unit189>
+      <Unit190>
+        <Filename Value="DataForm.pas"/>
+        <IsPartOfProject Value="True"/>
+        <ComponentName Value="GridDataForm"/>
+        <HasResources Value="True"/>
+        <ResourceBaseClass Value="Form"/>
+        <EditorIndex Value="3"/>
+        <TopLine Value="18"/>
+        <CursorPos X="16" Y="23"/>
+        <UsageCount Value="200"/>
+        <Bookmarks Count="1">
+          <Item0 X="18" Y="385" ID="1"/>
+        </Bookmarks>
+        <Loaded Value="True"/>
+        <LoadedDesigner Value="True"/>
+      </Unit190>
+      <Unit191>
+        <Filename Value="D:\dev\lazarus\lcl\lcltype.pp"/>
+        <UnitName Value="LCLType"/>
+        <EditorIndex Value="-1"/>
+        <TopLine Value="490"/>
+        <CursorPos X="3" Y="504"/>
+        <UsageCount Value="8"/>
+      </Unit191>
+      <Unit192>
+        <Filename Value="D:\dev\fpc\2.6\src\rtl\objpas\strutils.pp"/>
+        <EditorIndex Value="-1"/>
+        <TopLine Value="90"/>
+        <CursorPos X="10" Y="103"/>
+        <UsageCount Value="23"/>
+      </Unit192>
+      <Unit193>
+        <Filename Value="..\bin\number.sql"/>
+        <EditorIndex Value="-1"/>
+        <CursorPos X="4" Y="16"/>
+        <UsageCount Value="200"/>
+        <DefaultSyntaxHighlighter Value="SQL"/>
+      </Unit193>
+      <Unit194>
+        <Filename Value="ParamsForms.pas"/>
+        <ComponentName Value="ParamsForm"/>
+        <HasResources Value="True"/>
+        <ResourceBaseClass Value="Form"/>
+        <EditorIndex Value="-1"/>
+        <TopLine Value="4"/>
+        <CursorPos X="47" Y="12"/>
+        <UsageCount Value="90"/>
+      </Unit194>
+      <Unit195>
+        <Filename Value="M:\home\pascal\projects\miniSQLViewer\gui\Main.pas"/>
+        <EditorIndex Value="-1"/>
+        <TopLine Value="1733"/>
+        <CursorPos Y="1749"/>
+        <UsageCount Value="9"/>
+      </Unit195>
+      <Unit196>
+        <Filename Value="M:\home\pascal\projects\miniSQLViewer\gui\ParamsForms.pas"/>
+        <EditorIndex Value="-1"/>
+        <TopLine Value="21"/>
+        <CursorPos X="23" Y="33"/>
+        <UsageCount Value="8"/>
+      </Unit196>
+      <Unit197>
+        <Filename Value="..\upload.cmd"/>
+        <EditorIndex Value="-1"/>
+        <CursorPos X="90" Y="2"/>
+        <UsageCount Value="3"/>
+        <DefaultSyntaxHighlighter Value="None"/>
+      </Unit197>
+      <Unit198>
+        <Filename Value="..\bin\totals.sql"/>
+        <EditorIndex Value="-1"/>
+        <CursorPos X="47" Y="12"/>
+        <UsageCount Value="200"/>
+        <DefaultSyntaxHighlighter Value="SQL"/>
+      </Unit198>
+      <Unit199>
+        <Filename Value="D:\dev\fpc\2.6\src\rtl\objpas\sysutils\sysstrh.inc"/>
+        <EditorIndex Value="-1"/>
+        <TopLine Value="13"/>
+        <CursorPos X="28" Y="27"/>
+        <UsageCount Value="8"/>
+      </Unit199>
+      <Unit200>
+        <Filename Value="..\bin\check.sql"/>
+        <EditorIndex Value="-1"/>
+        <CursorPos X="34" Y="4"/>
+        <UsageCount Value="200"/>
+        <DefaultSyntaxHighlighter Value="SQL"/>
+      </Unit200>
+      <Unit201>
+        <Filename Value="..\bin\open.sql"/>
+        <EditorIndex Value="-1"/>
+        <UsageCount Value="200"/>
+        <DefaultSyntaxHighlighter Value="SQL"/>
+      </Unit201>
+      <Unit202>
+        <Filename Value="..\bin\init.sql"/>
+        <EditorIndex Value="-1"/>
+        <CursorPos X="33" Y="18"/>
+        <UsageCount Value="144"/>
+        <DefaultSyntaxHighlighter Value="SQL"/>
+      </Unit202>
+      <Unit203>
+        <Filename Value="m:\home\pascal\lib\minilib\connection\db\sqlite\mncSQLiteHeader.pas"/>
+        <EditorIndex Value="-1"/>
+        <TopLine Value="235"/>
+        <CursorPos X="57" Y="246"/>
+        <UsageCount Value="12"/>
+      </Unit203>
+      <Unit204>
+        <Filename Value="..\csv\my.csv"/>
+        <EditorIndex Value="-1"/>
+        <CursorPos X="32" Y="11"/>
+        <UsageCount Value="3"/>
+        <DefaultSyntaxHighlighter Value="None"/>
+      </Unit204>
+      <Unit205>
+        <Filename Value="m:\home\pascal\lib\minilib\connection\db\mncSQL.pas"/>
+        <EditorIndex Value="-1"/>
+        <TopLine Value="88"/>
+        <CursorPos X="17" Y="102"/>
+        <UsageCount Value="47"/>
+      </Unit205>
+      <Unit206>
+        <Filename Value="..\bin\deep.sql"/>
+        <EditorIndex Value="-1"/>
+        <CursorPos X="51" Y="6"/>
+        <UsageCount Value="2"/>
+        <DefaultSyntaxHighlighter Value="SQL"/>
+      </Unit206>
+      <Unit207>
+        <Filename Value="D:\dev\lazarus\lcl\controls.pp"/>
+        <UnitName Value="Controls"/>
+        <EditorIndex Value="-1"/>
+        <TopLine Value="2589"/>
+        <CursorPos X="47" Y="2591"/>
+        <UsageCount Value="2"/>
+      </Unit207>
+      <Unit208>
+        <Filename Value="..\data\readme.txt"/>
+        <EditorIndex Value="-1"/>
+        <CursorPos X="12"/>
+        <UsageCount Value="1"/>
+        <DefaultSyntaxHighlighter Value="None"/>
+      </Unit208>
+      <Unit209>
+        <Filename Value="..\bin\deep-show.sql"/>
+        <EditorIndex Value="-1"/>
+        <UsageCount Value="5"/>
+        <DefaultSyntaxHighlighter Value="SQL"/>
+      </Unit209>
+      <Unit210>
+        <Filename Value="..\bin\deep-caller.sql"/>
+        <EditorIndex Value="-1"/>
+        <CursorPos X="8" Y="3"/>
+        <UsageCount Value="5"/>
+        <DefaultSyntaxHighlighter Value="SQL"/>
+      </Unit210>
+      <Unit211>
+        <Filename Value="..\version.txt"/>
+        <EditorIndex Value="-1"/>
+        <CursorPos X="2"/>
+        <UsageCount Value="1"/>
+        <DefaultSyntaxHighlighter Value="None"/>
+      </Unit211>
+      <Unit212>
+        <Filename Value="..\csv\ramez2.csv"/>
+        <EditorIndex Value="-1"/>
+        <TopLine Value="983"/>
+        <CursorPos X="29" Y="1004"/>
+        <UsageCount Value="3"/>
+        <DefaultSyntaxHighlighter Value="None"/>
+      </Unit212>
+      <Unit213>
+        <Filename Value="..\bin\deep-callee.sql"/>
+        <EditorIndex Value="-1"/>
+        <CursorPos X="8" Y="2"/>
+        <UsageCount Value="5"/>
+        <DefaultSyntaxHighlighter Value="SQL"/>
+      </Unit213>
+      <Unit214>
+        <Filename Value="..\csv\ttttt.csv"/>
+        <EditorIndex Value="-1"/>
+        <CursorPos X="69" Y="9"/>
+        <UsageCount Value="3"/>
+        <DefaultSyntaxHighlighter Value="None"/>
+      </Unit214>
+      <Unit215>
+        <Filename Value="D:\dev\fpc\2.6\src\packages\mysql\src\mysql50.pp"/>
+        <EditorIndex Value="-1"/>
+        <CursorPos X="10" Y="10"/>
+        <UsageCount Value="4"/>
+      </Unit215>
+      <Unit216>
+        <Filename Value="D:\dev\fpc\2.6\src\packages\mysql\src\mysql.inc"/>
+        <EditorIndex Value="-1"/>
+        <TopLine Value="1774"/>
+        <CursorPos Y="1800"/>
+        <UsageCount Value="4"/>
+      </Unit216>
+      <Unit217>
+        <Filename Value="M:\home\pascal\lib\minilib\connection\db\mysql\mncMySQLHeader.pas1"/>
+        <EditorIndex Value="-1"/>
+        <UsageCount Value="2"/>
+        <DefaultSyntaxHighlighter Value="None"/>
+      </Unit217>
+      <Unit218>
+        <Filename Value="m:\home\pascal\lib\minilib\connection\db\mysql\mncMySQL.pas"/>
+        <EditorIndex Value="-1"/>
+        <TopLine Value="22"/>
+        <CursorPos X="25" Y="37"/>
+        <UsageCount Value="107"/>
+        <Bookmarks Count="1">
+          <Item0 X="3" Y="1122" ID="1"/>
+        </Bookmarks>
+      </Unit218>
+      <Unit219>
+        <Filename Value="D:\dev\fpc\2.6\src\packages\fcl-db\src\sqldb\sqldb.pp"/>
+        <EditorIndex Value="-1"/>
+        <TopLine Value="284"/>
+        <CursorPos X="28" Y="293"/>
+        <UsageCount Value="10"/>
+      </Unit219>
+      <Unit220>
+        <Filename Value="D:\dev\fpc\2.6\src\packages\fcl-db\src\sqldb\mysql\mysqlconn.inc"/>
+        <EditorIndex Value="-1"/>
+        <TopLine Value="511"/>
+        <CursorPos X="160" Y="535"/>
+        <UsageCount Value="6"/>
+      </Unit220>
+      <Unit221>
+        <Filename Value="..\bin\temp.sql"/>
+        <EditorIndex Value="-1"/>
+        <CursorPos X="13" Y="8"/>
+        <UsageCount Value="198"/>
+        <DefaultSyntaxHighlighter Value="SQL"/>
+      </Unit221>
+      <Unit222>
+        <Filename Value="D:\dev\lazarus\components\lazutils\lazutf8.pas"/>
+        <UnitName Value="LazUTF8"/>
+        <EditorIndex Value="-1"/>
+        <TopLine Value="132"/>
+        <CursorPos X="10" Y="143"/>
+        <UsageCount Value="4"/>
+      </Unit222>
+      <Unit223>
+        <Filename Value="D:\dev\fpc\2.6\src\rtl\inc\objpash.inc"/>
+        <EditorIndex Value="-1"/>
+        <TopLine Value="177"/>
+        <CursorPos X="23" Y="192"/>
+        <UsageCount Value="3"/>
+      </Unit223>
+      <Unit224>
+        <Filename Value="D:\dev\fpc\2.6\src\packages\fcl-db\src\base\db.pas"/>
+        <EditorIndex Value="-1"/>
+        <TopLine Value="1101"/>
+        <CursorPos X="3" Y="1115"/>
+        <UsageCount Value="10"/>
+      </Unit224>
+      <Unit225>
+        <Filename Value="D:\dev\fpc\2.6\src\packages\mysql\src\mysql40dyn.pp"/>
+        <EditorIndex Value="-1"/>
+        <UsageCount Value="2"/>
+      </Unit225>
+      <Unit226>
+        <Filename Value="D:\dev\fpc\2.6\src\packages\fcl-db\src\base\database.inc"/>
+        <EditorIndex Value="-1"/>
+        <TopLine Value="535"/>
+        <CursorPos X="3" Y="562"/>
+        <UsageCount Value="8"/>
+      </Unit226>
+      <Unit227>
+        <Filename Value="D:\dev\fpc\2.6\src\rtl\win\wininc\ascdef.inc"/>
+        <EditorIndex Value="-1"/>
+        <TopLine Value="54"/>
+        <CursorPos X="22" Y="69"/>
+        <UsageCount Value="2"/>
+      </Unit227>
+      <Unit228>
+        <Filename Value="D:\dev\fpc\2.6\src\packages\mysql\src\mysql56.pp"/>
+        <EditorIndex Value="-1"/>
+        <UsageCount Value="2"/>
+      </Unit228>
+      <Unit229>
+        <Filename Value="D:\dev\fpc\2.6\src\rtl\inc\ctypes.pp"/>
+        <EditorIndex Value="-1"/>
+        <TopLine Value="45"/>
+        <CursorPos X="28" Y="58"/>
+        <UsageCount Value="10"/>
+      </Unit229>
+      <Unit230>
+        <Filename Value="ImportExternalForms.pas"/>
+        <ComponentName Value="ImportExternalForm"/>
+        <HasResources Value="True"/>
+        <ResourceBaseClass Value="Form"/>
+        <EditorIndex Value="-1"/>
+        <TopLine Value="80"/>
+        <CursorPos X="25" Y="91"/>
+        <UsageCount Value="186"/>
+      </Unit230>
+      <Unit231>
+        <Filename Value="..\csv\ramez1.csv"/>
+        <EditorIndex Value="-1"/>
+        <UsageCount Value="3"/>
+        <DefaultSyntaxHighlighter Value="None"/>
+      </Unit231>
+      <Unit232>
+        <Filename Value="..\csv\ramez3.csv"/>
+        <EditorIndex Value="-1"/>
+        <UsageCount Value="3"/>
+        <DefaultSyntaxHighlighter Value="None"/>
+      </Unit232>
+      <Unit233>
+        <Filename Value="..\csv\ramez5.csv"/>
+        <EditorIndex Value="-1"/>
+        <UsageCount Value="3"/>
+        <DefaultSyntaxHighlighter Value="None"/>
+      </Unit233>
+      <Unit234>
+        <Filename Value="..\csv\test1.csv"/>
+        <EditorIndex Value="-1"/>
+        <UsageCount Value="3"/>
+        <DefaultSyntaxHighlighter Value="None"/>
+      </Unit234>
+      <Unit235>
+        <Filename Value="..\csv\888.csv"/>
+        <EditorIndex Value="-1"/>
+        <UsageCount Value="3"/>
+        <DefaultSyntaxHighlighter Value="None"/>
+      </Unit235>
+      <Unit236>
+        <Filename Value="C:\temp\ddd.csv"/>
+        <EditorIndex Value="-1"/>
+        <CursorPos X="43" Y="15"/>
+        <UsageCount Value="3"/>
+        <DefaultSyntaxHighlighter Value="None"/>
+      </Unit236>
+      <Unit237>
+        <Filename Value="m:\home\pascal\lib\minilib\connection\source\ui\ParamsForms.pas"/>
+        <EditorIndex Value="-1"/>
+        <TopLine Value="115"/>
+        <CursorPos X="120" Y="115"/>
+        <UsageCount Value="9"/>
+        <Bookmarks Count="1">
+          <Item0 X="7" Y="69" ID="1"/>
+        </Bookmarks>
+      </Unit237>
+      <Unit238>
+        <Filename Value="m:\home\pascal\lib\minilib\connection\source\ui\CSVOptionsForms.pas"/>
+        <ComponentName Value="CSVOptionsForm"/>
+        <HasResources Value="True"/>
+        <ResourceBaseClass Value="Form"/>
+        <EditorIndex Value="-1"/>
+        <TopLine Value="80"/>
+        <CursorPos X="84" Y="96"/>
+        <UsageCount Value="165"/>
+      </Unit238>
+      <Unit239>
+        <Filename Value="D:\dev\lazarus\lcl\forms.pp"/>
+        <UnitName Value="Forms"/>
+        <EditorIndex Value="-1"/>
+        <TopLine Value="1505"/>
+        <CursorPos X="47" Y="1517"/>
+        <UsageCount Value="3"/>
+      </Unit239>
+      <Unit240>
+        <Filename Value="M:\home\pascal\lib\minilib\connection\source\ui\CSVOptionsForms.lfm"/>
+        <EditorIndex Value="-1"/>
+        <CursorPos X="39"/>
+        <UsageCount Value="3"/>
+        <DefaultSyntaxHighlighter Value="LFM"/>
+      </Unit240>
+      <Unit241>
+        <Filename Value="..\csv\9999.csv"/>
+        <EditorIndex Value="-1"/>
+        <CursorPos X="60" Y="5"/>
+        <UsageCount Value="3"/>
+        <DefaultSyntaxHighlighter Value="None"/>
+      </Unit241>
+      <Unit242>
+        <Filename Value="..\bin\mysql-import.sql"/>
+        <EditorIndex Value="-1"/>
+        <CursorPos X="43"/>
+        <UsageCount Value="3"/>
+        <DefaultSyntaxHighlighter Value="SQL"/>
+      </Unit242>
+      <Unit243>
+        <Filename Value="c_dzVirtualStringGrid.pas"/>
+        <EditorIndex Value="-1"/>
+        <TopLine Value="438"/>
+        <CursorPos X="13" Y="462"/>
+        <UsageCount Value="4"/>
+        <Bookmarks Count="1">
+          <Item0 Y="255" ID="1"/>
+        </Bookmarks>
+      </Unit243>
+      <Unit244>
+        <Filename Value="u_dzVclUtils.pas"/>
+        <EditorIndex Value="-1"/>
+        <TopLine Value="19"/>
+        <CursorPos Y="20"/>
+        <UsageCount Value="3"/>
+      </Unit244>
+      <Unit245>
+        <Filename Value="..\csv\zaher236.csv"/>
+        <EditorIndex Value="-1"/>
+        <UsageCount Value="4"/>
+        <DefaultSyntaxHighlighter Value="None"/>
+      </Unit245>
+      <Unit246>
+        <Filename Value="psSQLEngine.pas"/>
+        <IsPartOfProject Value="True"/>
+        <EditorIndex Value="4"/>
+        <TopLine Value="377"/>
+        <CursorPos X="13" Y="401"/>
+        <UsageCount Value="171"/>
+        <Loaded Value="True"/>
+      </Unit246>
+      <Unit247>
+        <Filename Value="..\tools\Find Number Who call Deffrent.sql"/>
+        <EditorIndex Value="-1"/>
+        <UsageCount Value="3"/>
+        <DefaultSyntaxHighlighter Value="SQL"/>
+      </Unit247>
+      <Unit248>
+        <Filename Value="..\tools\Find Number Who call.sql"/>
+        <EditorIndex Value="-1"/>
+        <UsageCount Value="3"/>
+        <DefaultSyntaxHighlighter Value="SQL"/>
+      </Unit248>
+      <Unit249>
+        <Filename Value="..\tools\readme.txt"/>
+        <EditorIndex Value="-1"/>
+        <UsageCount Value="3"/>
+        <DefaultSyntaxHighlighter Value="None"/>
+      </Unit249>
+      <Unit250>
+        <Filename Value="..\tools\Show Number.sql"/>
+        <EditorIndex Value="-1"/>
+        <UsageCount Value="3"/>
+        <DefaultSyntaxHighlighter Value="SQL"/>
+      </Unit250>
+      <Unit251>
+        <Filename Value="..\tools\White Caller ID.sql"/>
+        <EditorIndex Value="-1"/>
+        <TopLine Value="15"/>
+        <CursorPos X="10" Y="38"/>
+        <UsageCount Value="3"/>
+        <DefaultSyntaxHighlighter Value="SQL"/>
+      </Unit251>
+      <Unit252>
+        <Filename Value="..\tools\White Number.sql"/>
+        <EditorIndex Value="-1"/>
+        <CursorPos X="10" Y="24"/>
+        <UsageCount Value="3"/>
+        <DefaultSyntaxHighlighter Value="SQL"/>
+      </Unit252>
+      <Unit253>
+        <Filename Value="..\tools\White Rejected.sql"/>
+        <EditorIndex Value="-1"/>
+        <CursorPos X="12" Y="24"/>
+        <UsageCount Value="3"/>
+        <DefaultSyntaxHighlighter Value="SQL"/>
+      </Unit253>
+      <Unit254>
+        <Filename Value="..\tools\All Black.sql"/>
+        <EditorIndex Value="-1"/>
+        <CursorPos X="16" Y="24"/>
+        <UsageCount Value="3"/>
+        <DefaultSyntaxHighlighter Value="SQL"/>
+      </Unit254>
+      <Unit255>
+        <Filename Value="..\tools\Average Caller ID.sql"/>
+        <EditorIndex Value="-1"/>
+        <UsageCount Value="3"/>
+        <DefaultSyntaxHighlighter Value="SQL"/>
+      </Unit255>
+      <Unit256>
+        <Filename Value="..\tools\Average Destination.sql"/>
+        <EditorIndex Value="-1"/>
+        <UsageCount Value="3"/>
+        <DefaultSyntaxHighlighter Value="SQL"/>
+      </Unit256>
+      <Unit257>
+        <Filename Value="..\tools\Black Caller ID.sql"/>
+        <EditorIndex Value="-1"/>
+        <CursorPos X="10" Y="24"/>
+        <UsageCount Value="3"/>
+        <DefaultSyntaxHighlighter Value="SQL"/>
+      </Unit257>
+      <Unit258>
+        <Filename Value="..\tools\Black Number In To Way.sql"/>
+        <EditorIndex Value="-1"/>
+        <CursorPos X="12" Y="24"/>
+        <UsageCount Value="3"/>
+        <DefaultSyntaxHighlighter Value="SQL"/>
+      </Unit258>
+      <Unit259>
+        <Filename Value="..\tools\Black Number.sql"/>
+        <EditorIndex Value="-1"/>
+        <CursorPos X="142" Y="2"/>
+        <UsageCount Value="3"/>
+        <DefaultSyntaxHighlighter Value="SQL"/>
+      </Unit259>
+      <Unit260>
+        <Filename Value="..\tools\Caller ID.sql"/>
+        <EditorIndex Value="-1"/>
+        <UsageCount Value="3"/>
+        <DefaultSyntaxHighlighter Value="SQL"/>
+      </Unit260>
+      <Unit261>
+        <Filename Value="..\tools\Destination.sql"/>
+        <EditorIndex Value="-1"/>
+        <UsageCount Value="3"/>
+        <DefaultSyntaxHighlighter Value="SQL"/>
+      </Unit261>
+      <Unit262>
+        <Filename Value="..\tools\Different Caller ID &amp; Average Caller &amp; less 3 minute.sql"/>
+        <EditorIndex Value="-1"/>
+        <CursorPos X="15" Y="5"/>
+        <UsageCount Value="3"/>
+        <DefaultSyntaxHighlighter Value="SQL"/>
+      </Unit262>
+      <Unit263>
+        <Filename Value="..\tools\Different Caller ID &amp; Average Caller ID For All &amp; less 3 minute.sql"/>
+        <EditorIndex Value="-1"/>
+        <CursorPos X="16" Y="14"/>
+        <UsageCount Value="3"/>
+        <DefaultSyntaxHighlighter Value="SQL"/>
+      </Unit263>
+      <Unit264>
+        <Filename Value="..\tools\Different Caller ID.sql"/>
+        <EditorIndex Value="-1"/>
+        <UsageCount Value="3"/>
+        <DefaultSyntaxHighlighter Value="SQL"/>
+      </Unit264>
+      <Unit265>
+        <Filename Value="..\tools\Different Destination &amp; Average Destination For All &amp; less 3 minute.sql"/>
+        <EditorIndex Value="-1"/>
+        <CursorPos X="16" Y="24"/>
+        <UsageCount Value="3"/>
+        <DefaultSyntaxHighlighter Value="SQL"/>
+      </Unit265>
+      <Unit266>
+        <Filename Value="..\tools\Different Destination.sql"/>
+        <EditorIndex Value="-1"/>
+        <UsageCount Value="3"/>
+        <DefaultSyntaxHighlighter Value="SQL"/>
+      </Unit266>
+      <Unit267>
+        <Filename Value="SaveInTableForms.pas"/>
+        <ComponentName Value="SaveInTableForm"/>
+        <HasResources Value="True"/>
+        <ResourceBaseClass Value="Form"/>
+        <EditorIndex Value="-1"/>
+        <UsageCount Value="169"/>
+      </Unit267>
+      <Unit268>
+        <Filename Value="D:\dev\fpc\2.6\src\rtl\inc\variants.pp"/>
+        <EditorIndex Value="-1"/>
+        <TopLine Value="52"/>
+        <CursorPos X="37" Y="66"/>
+        <UsageCount Value="9"/>
+      </Unit268>
+      <Unit269>
+        <Filename Value="D:\dev\fpc\2.6\src\rtl\inc\varianth.inc"/>
+        <EditorIndex Value="-1"/>
+        <TopLine Value="53"/>
+        <CursorPos X="4" Y="68"/>
+        <UsageCount Value="9"/>
+      </Unit269>
+      <Unit270>
+        <Filename Value="D:\dev\fpc\2.6\src\rtl\inc\heaph.inc"/>
+        <EditorIndex Value="-1"/>
+        <TopLine Value="73"/>
+        <CursorPos X="21" Y="94"/>
+        <UsageCount Value="6"/>
+      </Unit270>
+      <Unit271>
+        <Filename Value="D:\dev\fpc\2.6\src\rtl\inc\heap.inc"/>
+        <EditorIndex Value="-1"/>
+        <TopLine Value="315"/>
+        <CursorPos X="3" Y="317"/>
+        <UsageCount Value="6"/>
+      </Unit271>
+      <Unit272>
+        <Filename Value="D:\dev\lazarus\lcl\maps.pp"/>
+        <UnitName Value="Maps"/>
+        <EditorIndex Value="-1"/>
+        <TopLine Value="704"/>
+        <CursorPos X="3" Y="706"/>
+        <UsageCount Value="4"/>
+      </Unit272>
+      <Unit273>
+        <Filename Value="..\csv\tttt.csv"/>
+        <EditorIndex Value="-1"/>
+        <CursorPos X="12" Y="2"/>
+        <UsageCount Value="3"/>
+        <DefaultSyntaxHighlighter Value="None"/>
+      </Unit273>
+      <Unit274>
+        <Filename Value="C:\temp\1.sql"/>
+        <EditorIndex Value="-1"/>
+        <CursorPos X="51" Y="16"/>
+        <UsageCount Value="3"/>
+        <DefaultSyntaxHighlighter Value="SQL"/>
+      </Unit274>
+      <Unit275>
+        <Filename Value="C:\temp\2.sql"/>
+        <EditorIndex Value="-1"/>
+        <TopLine Value="52"/>
+        <CursorPos X="37" Y="78"/>
+        <UsageCount Value="3"/>
+        <DefaultSyntaxHighlighter Value="SQL"/>
+      </Unit275>
+      <Unit276>
+        <Filename Value="D:\dev\fpc\2.6\src\packages\fcl-db\src\base\dataset.inc"/>
+        <EditorIndex Value="-1"/>
+        <TopLine Value="1731"/>
+        <CursorPos X="3" Y="1735"/>
+        <UsageCount Value="5"/>
+      </Unit276>
+      <Unit277>
+        <Filename Value="m:\home\pascal\lib\minilib\connection\db\postgre\mncPostgre.pas"/>
+        <EditorIndex Value="-1"/>
+        <TopLine Value="1448"/>
+        <CursorPos X="22" Y="1468"/>
+        <UsageCount Value="52"/>
+        <Bookmarks Count="1">
+          <Item0 Y="404" ID="2"/>
+        </Bookmarks>
+      </Unit277>
+      <Unit278>
+        <Filename Value="M:\home\pascal\lib\minilib\connection\db\postgre\mncPGSchemas.pas"/>
+        <EditorIndex Value="-1"/>
+        <TopLine Value="44"/>
+        <CursorPos X="13" Y="58"/>
+        <UsageCount Value="5"/>
+      </Unit278>
+      <Unit279>
+        <Filename Value="..\bin\config.ini"/>
+        <EditorIndex Value="-1"/>
+        <CursorPos X="14" Y="3"/>
+        <UsageCount Value="6"/>
+        <DefaultSyntaxHighlighter Value="Ini"/>
+      </Unit279>
+      <Unit280>
+        <Filename Value="D:\dev\fpc\2.6\src\packages\fcl-base\src\inifiles.pp"/>
+        <UnitName Value="IniFiles"/>
+        <EditorIndex Value="-1"/>
+        <TopLine Value="168"/>
+        <CursorPos X="14" Y="181"/>
+        <UsageCount Value="4"/>
+      </Unit280>
+      <Unit281>
+        <Filename Value="M:\home\pascal\lib\minilib\connection\db\postgre\mncPGHeader.pas"/>
+        <EditorIndex Value="-1"/>
+        <TopLine Value="243"/>
+        <CursorPos X="15" Y="259"/>
+        <UsageCount Value="4"/>
+      </Unit281>
+      <Unit282>
+        <Filename Value="psSqlUtils.pas"/>
+        <IsPartOfProject Value="True"/>
+        <EditorIndex Value="-1"/>
+        <TopLine Value="2"/>
+        <CursorPos X="80" Y="16"/>
+        <UsageCount Value="148"/>
+      </Unit282>
+      <Unit283>
+        <Filename Value="..\bin\sql.sql"/>
+        <EditorIndex Value="-1"/>
+        <UsageCount Value="5"/>
+        <DefaultSyntaxHighlighter Value="SQL"/>
+      </Unit283>
+      <Unit284>
+        <Filename Value="D:\dev\fpc\2.6\src\packages\fcl-db\src\base\bufdataset.pas"/>
+        <UnitName Value="BufDataset"/>
+        <EditorIndex Value="-1"/>
+        <TopLine Value="385"/>
+        <CursorPos X="3" Y="397"/>
+        <UsageCount Value="3"/>
+      </Unit284>
+      <Unit285>
+        <Filename Value="..\bin\init-pg.sql"/>
+        <EditorIndex Value="-1"/>
+        <CursorPos Y="3"/>
+        <UsageCount Value="5"/>
+        <DefaultSyntaxHighlighter Value="SQL"/>
+      </Unit285>
+      <Unit286>
+        <Filename Value="phone_sy.inc"/>
+        <IsPartOfProject Value="True"/>
+        <EditorIndex Value="-1"/>
+        <CursorPos X="12"/>
+        <UsageCount Value="134"/>
+      </Unit286>
+      <Unit287>
+        <Filename Value="D:\dev\lazarus\lcl\graphics.pp"/>
+        <UnitName Value="Graphics"/>
+        <EditorIndex Value="-1"/>
+        <TopLine Value="303"/>
+        <CursorPos X="12" Y="320"/>
+        <UsageCount Value="7"/>
+      </Unit287>
+      <Unit288>
+        <Filename Value="m:\home\pascal\lib\minilib\connection\db\mysql\mncMySQL.inc"/>
+        <EditorIndex Value="-1"/>
+        <UsageCount Value="5"/>
+      </Unit288>
+      <Unit289>
+        <Filename Value="m:\home\pascal\lib\minilib\connection\db\mysql\get.sh"/>
+        <EditorIndex Value="-1"/>
+        <CursorPos X="110"/>
+        <UsageCount Value="6"/>
+        <DefaultSyntaxHighlighter Value="Bash"/>
+      </Unit289>
+      <Unit290>
+        <Filename Value="m:\home\pascal\lib\minilib\connection\db\mysql\mysql56dyn.pp"/>
+        <EditorIndex Value="-1"/>
+        <CursorPos X="19"/>
+        <UsageCount Value="5"/>
+      </Unit290>
+      <Unit291>
+        <Filename Value="D:\dev\fpc\2.6\src\packages\fcl-db\src\sqldb\mysql\mysql56conn.pas"/>
+        <EditorIndex Value="-1"/>
+        <CursorPos X="5" Y="10"/>
+        <UsageCount Value="5"/>
+      </Unit291>
+      <Unit292>
+        <Filename Value="m:\home\pascal\lib\minilib\connection\db\mysql\mysql.inc"/>
+        <EditorIndex Value="-1"/>
+        <TopLine Value="898"/>
+        <CursorPos X="69" Y="909"/>
+        <UsageCount Value="29"/>
+      </Unit292>
+      <Unit293>
+        <Filename Value="m:\home\pascal\lib\minilib\connection\db\mysql\mncMySql56dyn.pp"/>
+        <EditorIndex Value="-1"/>
+        <CursorPos X="17" Y="4"/>
+        <UsageCount Value="6"/>
+      </Unit293>
+      <Unit294>
+        <Filename Value="m:\home\pascal\lib\minilib\connection\db\mysql\testdb5.pp"/>
+        <EditorIndex Value="-1"/>
+        <TopLine Value="69"/>
+        <CursorPos Y="80"/>
+        <UsageCount Value="6"/>
+        <Bookmarks Count="1">
+          <Item0 Y="78" ID="1"/>
+        </Bookmarks>
+      </Unit294>
+      <Unit295>
+        <Filename Value="m:\home\pascal\lib\minilib\connection\db\mysql\mncMySQLdyn.pp"/>
+        <EditorIndex Value="-1"/>
+        <CursorPos X="14" Y="5"/>
+        <UsageCount Value="11"/>
+      </Unit295>
+      <Unit296>
+        <Filename Value="m:\home\pascal\lib\minilib\connection\db\mysql\mncMySQLSchemas.pas"/>
+        <EditorIndex Value="-1"/>
+        <UsageCount Value="5"/>
+      </Unit296>
+      <Unit297>
+        <Filename Value="m:\home\pascal\lib\minilib\connection\db\sqlite\mncSQLiteSchemas.pas"/>
+        <EditorIndex Value="-1"/>
+        <TopLine Value="14"/>
+        <CursorPos X="19" Y="25"/>
+        <UsageCount Value="5"/>
+      </Unit297>
+      <Unit298>
+        <Filename Value="m:\home\pascal\lib\minilib\connection\source\MiniConnections.pas"/>
+        <EditorIndex Value="-1"/>
+        <CursorPos X="41" Y="9"/>
+        <UsageCount Value="5"/>
+      </Unit298>
+      <Unit299>
+        <Filename Value="D:\dev\fpc\2.6\src\rtl\objpas\sysutils\datih.inc"/>
+        <EditorIndex Value="-1"/>
+        <TopLine Value="90"/>
+        <CursorPos X="10" Y="102"/>
+        <UsageCount Value="5"/>
+      </Unit299>
+      <Unit300>
+        <Filename Value="D:\dev\fpc\2.6\src\rtl\objpas\sysutils\dati.inc"/>
+        <EditorIndex Value="-1"/>
+        <TopLine Value="139"/>
+        <CursorPos X="3" Y="142"/>
+        <UsageCount Value="5"/>
+      </Unit300>
+      <Unit301>
+        <Filename Value="m:\home\pascal\lib\minilib\connection\db\mncCommons.pas"/>
+        <EditorIndex Value="-1"/>
+        <TopLine Value="37"/>
+        <CursorPos X="59" Y="57"/>
+        <UsageCount Value="6"/>
+      </Unit301>
+      <Unit302>
+        <Filename Value="D:\dev\fpc\2.6\src\rtl\win\wininc\messages.inc"/>
+        <EditorIndex Value="-1"/>
+        <TopLine Value="1293"/>
+        <CursorPos X="6" Y="1305"/>
+        <UsageCount Value="5"/>
+      </Unit302>
+      <Unit303>
+        <Filename Value="..\release.cmd"/>
+        <EditorIndex Value="-1"/>
+        <CursorPos X="23" Y="13"/>
+        <UsageCount Value="5"/>
+        <DefaultSyntaxHighlighter Value="None"/>
+      </Unit303>
+      <Unit304>
+        <Filename Value="..\csv\777777777777777.csv"/>
+        <EditorIndex Value="-1"/>
+        <UsageCount Value="5"/>
+        <DefaultSyntaxHighlighter Value="None"/>
+      </Unit304>
+      <Unit305>
+        <Filename Value="..\bin\init-mysql.sql"/>
+        <EditorIndex Value="-1"/>
+        <CursorPos Y="6"/>
+        <UsageCount Value="101"/>
+        <DefaultSyntaxHighlighter Value="SQL"/>
+      </Unit305>
+      <Unit306>
+        <Filename Value="m:\home\pascal\lib\minilib\lazarus\lib\SynHighlighterSQLite.pas"/>
+        <EditorIndex Value="-1"/>
+        <TopLine Value="21"/>
+        <CursorPos X="58" Y="37"/>
+        <UsageCount Value="7"/>
+      </Unit306>
+      <Unit307>
+        <Filename Value="init-mysql.sql"/>
+        <EditorIndex Value="-1"/>
+        <UsageCount Value="19"/>
+        <DefaultSyntaxHighlighter Value="SQL"/>
+      </Unit307>
+      <Unit308>
+        <Filename Value="m:\home\pascal\lib\minilib\lazarus\components\db\mncDB.pas"/>
+        <EditorIndex Value="-1"/>
+        <TopLine Value="103"/>
+        <CursorPos X="15" Y="103"/>
+        <UsageCount Value="5"/>
+      </Unit308>
+      <Unit309>
+        <Filename Value="m:\home\pascal\lib\minilib\lazarus\components\db\mncSQLUtils.pas"/>
+        <EditorIndex Value="-1"/>
+        <UsageCount Value="5"/>
+      </Unit309>
+      <Unit310>
+        <Filename Value="m:\home\pascal\lib\minilib\lazarus\components\db\mncSQL.pas"/>
+        <EditorIndex Value="-1"/>
+        <CursorPos X="52" Y="17"/>
+        <UsageCount Value="5"/>
+      </Unit310>
+      <Unit311>
+        <Filename Value="m:\home\pascal\lib\minilib\connection\db\postgre\mncPGMetas.pas"/>
+        <EditorIndex Value="-1"/>
+        <TopLine Value="48"/>
+        <CursorPos X="39" Y="54"/>
+        <UsageCount Value="5"/>
+      </Unit311>
+      <Unit312>
+        <Filename Value="D:\dev\lazarus\ide\ideguicmdline.pas"/>
+        <UnitName Value="IDEGuiCmdLine"/>
+        <EditorIndex Value="-1"/>
+        <TopLine Value="50"/>
+        <CursorPos X="45" Y="55"/>
+        <UsageCount Value="5"/>
+      </Unit312>
+      <Unit313>
+        <Filename Value="m:\home\pascal\lib\minilib\connection\source\mncCommons.pas"/>
+        <EditorIndex Value="-1"/>
+        <UsageCount Value="5"/>
+      </Unit313>
+      <Unit314>
+        <Filename Value="m:\home\pascal\lib\minilib\connection\db\firebird\mncFirebird.pas"/>
+        <EditorIndex Value="-1"/>
+        <TopLine Value="1051"/>
+        <CursorPos X="29" Y="1053"/>
+        <UsageCount Value="52"/>
+      </Unit314>
+      <Unit315>
+        <Filename Value="..\bin\init-sqlite.sql"/>
+        <EditorIndex Value="-1"/>
+        <CursorPos X="50"/>
+        <UsageCount Value="94"/>
+        <DefaultSyntaxHighlighter Value="SQL"/>
+      </Unit315>
+      <Unit316>
+        <Filename Value="D:\dev\fpc\2.6\src\packages\fcl-base\src\contnrs.pp"/>
+        <EditorIndex Value="-1"/>
+        <TopLine Value="69"/>
+        <CursorPos X="5" Y="76"/>
+        <UsageCount Value="23"/>
+      </Unit316>
+      <Unit317>
+        <Filename Value="D:\dev\fpc\2.6\src\rtl\objpas\classes\lists.inc"/>
+        <EditorIndex Value="-1"/>
+        <TopLine Value="731"/>
+        <CursorPos X="5" Y="739"/>
+        <UsageCount Value="23"/>
+      </Unit317>
+      <Unit318>
+        <Filename Value="m:\home\pascal\lib\minilib\connection\db\mysql\mncMySQLMetas.pas"/>
+        <EditorIndex Value="-1"/>
+        <TopLine Value="225"/>
+        <CursorPos X="24" Y="245"/>
+        <UsageCount Value="12"/>
+      </Unit318>
+      <Unit319>
+        <Filename Value="m:\home\pascal\lib\minilib\connection\db\mncMetas.pas"/>
+        <EditorIndex Value="-1"/>
+        <TopLine Value="18"/>
+        <CursorPos X="4" Y="31"/>
+        <UsageCount Value="8"/>
+      </Unit319>
+      <Unit320>
+        <Filename Value="F:\CD\open\db\HeidiSQL_9.3_Sourcecode\source\mysql_structures.pas"/>
+        <EditorIndex Value="-1"/>
+        <UsageCount Value="6"/>
+      </Unit320>
+      <Unit321>
+        <Filename Value="F:\CD\open\db\HeidiSQL_9.3_Sourcecode\source\dbconnection.pas"/>
+        <EditorIndex Value="-1"/>
+        <TopLine Value="2516"/>
+        <CursorPos X="15" Y="2539"/>
+        <UsageCount Value="6"/>
+      </Unit321>
+      <Unit322>
+        <Filename Value="F:\CD\open\db\HeidiSQL_9.3_Sourcecode\source\main.pas"/>
+        <UnitName Value="Main"/>
+        <EditorIndex Value="-1"/>
+        <TopLine Value="11475"/>
+        <CursorPos X="13" Y="11478"/>
+        <UsageCount Value="19"/>
+      </Unit322>
+      <Unit323>
+        <Filename Value="F:\CD\open\db\HeidiSQL_9.3_Sourcecode\source\connections.pas"/>
+        <EditorIndex Value="-1"/>
+        <CursorPos X="6" Y="14"/>
+        <UsageCount Value="19"/>
+      </Unit323>
+      <Unit324>
+        <Filename Value="D:\dev\fpc\2.6\src\rtl\win\wininc\func.inc"/>
+        <EditorIndex Value="-1"/>
+        <TopLine Value="245"/>
+        <CursorPos X="22" Y="258"/>
+        <UsageCount Value="17"/>
+      </Unit324>
+      <Unit325>
+        <Filename Value="m:\home\pascal\lib\minilib\connection\db\firebird\mncFBMetas.pas"/>
+        <EditorIndex Value="-1"/>
+        <TopLine Value="366"/>
+        <CursorPos X="24" Y="386"/>
+        <UsageCount Value="14"/>
+      </Unit325>
+      <Unit326>
+        <Filename Value="..\csv\9696.csv"/>
+        <EditorIndex Value="-1"/>
+        <TopLine Value="7"/>
+        <CursorPos X="50" Y="16"/>
+        <UsageCount Value="8"/>
+        <DefaultSyntaxHighlighter Value="None"/>
+      </Unit326>
+      <Unit327>
+        <Filename Value="m:\home\pascal\lib\minilib\connection\db\mncDB.pas"/>
+        <EditorIndex Value="-1"/>
+        <TopLine Value="29"/>
+        <CursorPos X="26" Y="45"/>
+        <UsageCount Value="11"/>
+      </Unit327>
+      <Unit328>
+        <Filename Value="W:\source\cs\source\delphi\lib\prim\source\prmPostgre.pas"/>
+        <EditorIndex Value="-1"/>
+        <UsageCount Value="9"/>
+      </Unit328>
+      <Unit329>
+        <Filename Value="m:\home\pascal\lib\minilib\connection\db\sqlite\mncSQLiteMetas.pas"/>
+        <EditorIndex Value="-1"/>
+        <TopLine Value="233"/>
+        <CursorPos X="24" Y="253"/>
+        <UsageCount Value="12"/>
+      </Unit329>
+      <Unit330>
+        <Filename Value="..\bin\totals-callee.sql"/>
+        <EditorIndex Value="-1"/>
+        <CursorPos X="41" Y="8"/>
+        <UsageCount Value="12"/>
+        <DefaultSyntaxHighlighter Value="SQL"/>
+      </Unit330>
+      <Unit331>
+        <Filename Value="..\bin\totals-caller.sql"/>
+        <EditorIndex Value="-1"/>
+        <CursorPos X="16" Y="4"/>
+        <UsageCount Value="12"/>
+        <DefaultSyntaxHighlighter Value="SQL"/>
+      </Unit331>
+      <Unit332>
+        <Filename Value="P:\dev\lazarus\ide\main.pp"/>
+        <UnitName Value="Main"/>
+        <EditorIndex Value="-1"/>
+        <TopLine Value="71"/>
+        <CursorPos Y="71"/>
+        <UsageCount Value="9"/>
+      </Unit332>
+      <Unit333>
+        <Filename Value="m:\home\pascal\lib\minilib\lazarus\lib\SynHighlighterStdSQL.pas"/>
+        <EditorIndex Value="-1"/>
+        <TopLine Value="15"/>
+        <CursorPos X="16" Y="28"/>
+        <UsageCount Value="9"/>
+      </Unit333>
+      <Unit334>
+        <Filename Value="m:\home\pascal\lib\minilib\connection\db\mysql\mysql\mysql.pas"/>
+        <EditorIndex Value="-1"/>
+        <TopLine Value="515"/>
+        <CursorPos X="45" Y="536"/>
+        <UsageCount Value="9"/>
+      </Unit334>
+      <Unit335>
+        <Filename Value="m:\home\pascal\lib\minilib\connection\db\mysql\mysql\mysql_win32.inc"/>
+        <EditorIndex Value="-1"/>
+        <CursorPos X="107"/>
+        <UsageCount Value="9"/>
+      </Unit335>
+      <Unit336>
+        <Filename Value="m:\home\pascal\lib\minilib\connection\db\mysql\mysql\StmtDemo\UDemo.pas"/>
+        <EditorIndex Value="-1"/>
+        <TopLine Value="296"/>
+        <CursorPos X="105" Y="313"/>
+        <UsageCount Value="9"/>
+      </Unit336>
+      <Unit337>
+        <Filename Value="M:\home\pascal\lib\minilib\connection\src\mncConnections.pas"/>
+        <EditorIndex Value="-1"/>
+        <TopLine Value="305"/>
+        <CursorPos X="14" Y="322"/>
+        <UsageCount Value="9"/>
+      </Unit337>
+      <Unit338>
+        <Filename Value="M:\home\pascal\lib\minilib\connection\src\sqlite\mncSQLite.pas"/>
+        <EditorIndex Value="-1"/>
+        <TopLine Value="833"/>
+        <CursorPos X="43" Y="847"/>
+        <UsageCount Value="13"/>
+      </Unit338>
+      <Unit339>
+        <Filename Value="M:\home\pascal\lib\minilib\connection\src\sqlite\mncSQLiteHeader.pas"/>
+        <EditorIndex Value="-1"/>
+        <TopLine Value="232"/>
+        <CursorPos X="72" Y="248"/>
+        <UsageCount Value="13"/>
+      </Unit339>
+      <Unit340>
+        <Filename Value="d:\dev\fpc\3.0\src\rtl\inc\systemh.inc"/>
+        <EditorIndex Value="-1"/>
+        <TopLine Value="509"/>
+        <CursorPos X="3" Y="525"/>
+        <UsageCount Value="12"/>
+      </Unit340>
+      <Unit341>
+        <Filename Value="M:\home\pascal\lib\minilib\connection\src\mncCSV.pas"/>
+        <EditorIndex Value="-1"/>
+        <TopLine Value="412"/>
+        <CursorPos X="5" Y="431"/>
+        <UsageCount Value="12"/>
+      </Unit341>
+      <Unit342>
+        <Filename Value="M:\home\pascal\lib\minilib\connection\src\mysql\mysql\mysql_win32.inc"/>
+        <EditorIndex Value="-1"/>
+        <TopLine Value="145"/>
+        <CursorPos X="7" Y="159"/>
+        <UsageCount Value="12"/>
+      </Unit342>
+      <Unit343>
+        <Filename Value="d:\dev\lazarus\components\lazutils\lconvencoding.pas"/>
+        <UnitName Value="LConvEncoding"/>
+        <EditorIndex Value="-1"/>
+        <TopLine Value="123"/>
+        <CursorPos X="10" Y="139"/>
+        <UsageCount Value="11"/>
+      </Unit343>
+      <Unit344>
+        <Filename Value="d:\dev\fpc\3.0\src\rtl\objpas\sysutils\sysunih.inc"/>
+        <TopLine Value="38"/>
+        <CursorPos X="17" Y="70"/>
+        <UsageCount Value="11"/>
+        <Loaded Value="True"/>
+      </Unit344>
+      <Unit345>
+        <Filename Value="d:\dev\fpc\3.0\src\rtl\win\wininc\defines.inc"/>
+        <EditorIndex Value="-1"/>
+        <TopLine Value="1445"/>
+        <CursorPos X="6" Y="1461"/>
+        <UsageCount Value="10"/>
+      </Unit345>
+    </Units>
+    <OtherDefines Count="1">
+      <Define0 Value="DEBUG"/>
+    </OtherDefines>
+    <JumpHistory Count="30" HistoryIndex="29">
+      <Position1>
+        <Filename Value="MainForms.pas"/>
+        <Caret Line="397" Column="2" TopLine="369"/>
+      </Position1>
+      <Position2>
+        <Filename Value="MainForms.pas"/>
+        <Caret Line="396" Column="2" TopLine="368"/>
+      </Position2>
+      <Position3>
+        <Filename Value="DataForm.pas"/>
+        <Caret Line="343" TopLine="337"/>
+      </Position3>
+      <Position4>
+        <Filename Value="psSQLEngine.pas"/>
+        <Caret Line="453" Column="3" TopLine="437"/>
+      </Position4>
+      <Position5>
+        <Filename Value="psSQLEngine.pas"/>
+        <Caret Line="157" Column="17" TopLine="148"/>
+      </Position5>
+      <Position6>
+        <Filename Value="psSQLEngine.pas"/>
+        <Caret Line="570" TopLine="544"/>
+      </Position6>
+      <Position7>
+        <Filename Value="OptionsForms.pas"/>
+        <Caret Line="72" Column="43" TopLine="67"/>
+      </Position7>
+      <Position8>
+        <Filename Value="OptionsForms.pas"/>
+        <Caret Line="71" Column="43" TopLine="66"/>
+      </Position8>
+      <Position9>
+        <Filename Value="OptionsForms.pas"/>
+        <Caret Line="70" Column="43" TopLine="65"/>
+      </Position9>
+      <Position10>
+        <Filename Value="OptionsForms.pas"/>
+        <Caret Line="69" Column="43" TopLine="64"/>
+      </Position10>
+      <Position11>
+        <Filename Value="OptionsForms.pas"/>
+        <Caret Line="68" Column="43" TopLine="63"/>
+      </Position11>
+      <Position12>
+        <Filename Value="OptionsForms.pas"/>
+        <Caret Line="67" Column="43" TopLine="62"/>
+      </Position12>
+      <Position13>
+        <Filename Value="OptionsForms.pas"/>
+        <Caret Line="66" Column="43" TopLine="61"/>
+      </Position13>
+      <Position14>
+        <Filename Value="OptionsForms.pas"/>
+        <Caret Line="65" Column="43" TopLine="60"/>
+      </Position14>
+      <Position15>
+        <Filename Value="OptionsForms.pas"/>
+        <Caret Line="64" Column="43" TopLine="59"/>
+      </Position15>
+      <Position16>
+        <Filename Value="psSQLEngine.pas"/>
+        <Caret Line="374" Column="13" TopLine="358"/>
+      </Position16>
+      <Position17>
+        <Filename Value="psSQLEngine.pas"/>
+        <Caret Line="401" Column="13" TopLine="377"/>
+      </Position17>
+      <Position18>
+        <Filename Value="OptionsForms.pas"/>
+        <Caret Line="48" TopLine="34"/>
+      </Position18>
+      <Position19>
+        <Filename Value="OptionsForms.pas"/>
+        <Caret Line="59" TopLine="43"/>
+      </Position19>
+      <Position20>
+        <Filename Value="OptionsForms.pas"/>
+        <Caret Line="73" Column="7" TopLine="49"/>
+      </Position20>
+      <Position21>
+        <Filename Value="OptionsForms.pas"/>
+        <Caret Line="22" TopLine="6"/>
+      </Position21>
+      <Position22>
+        <Filename Value="OptionsForms.pas"/>
+        <Caret Line="71" TopLine="47"/>
+      </Position22>
+      <Position23>
+        <Filename Value="MainForms.pas"/>
+        <Caret Line="80" TopLine="57"/>
+      </Position23>
+      <Position24>
+        <Filename Value="MainForms.pas"/>
+        <Caret Line="90" Column="24" TopLine="75"/>
+      </Position24>
+      <Position25>
+        <Filename Value="MainForms.pas"/>
+        <Caret Line="201" Column="7" TopLine="185"/>
+      </Position25>
+      <Position26>
+        <Filename Value="MainForms.pas"/>
+        <Caret Line="167" TopLine="151"/>
+      </Position26>
+      <Position27>
+        <Filename Value="MainForms.pas"/>
+        <Caret Line="85" Column="19" TopLine="82"/>
+      </Position27>
+      <Position28>
+        <Filename Value="MainForms.pas"/>
+        <Caret Line="268" Column="3" TopLine="263"/>
+      </Position28>
+      <Position29>
+        <Filename Value="MainForms.pas"/>
+        <Caret Line="83" Column="15" TopLine="70"/>
+      </Position29>
+      <Position30>
+        <Filename Value="MainForms.pas"/>
+        <Caret Line="169" Column="27" TopLine="162"/>
+      </Position30>
+    </JumpHistory>
+  </ProjectOptions>
+  <CompilerOptions>
+    <Version Value="11"/>
+    <PathDelim Value="\"/>
+    <Target>
+      <Filename Value="..\bin\phone_sy"/>
+    </Target>
+    <SearchPaths>
+      <IncludeFiles Value="$(ProjOutDir)"/>
+      <OtherUnitFiles Value="M:\home\pascal\lib\minilib\connection\source\ui\"/>
+      <UnitOutputDirectory Value="..\units\Debug"/>
+    </SearchPaths>
+    <Parsing>
+      <SyntaxOptions>
+        <IncludeAssertionCode Value="True"/>
+        <UseAnsiStrings Value="False"/>
+      </SyntaxOptions>
+    </Parsing>
+    <CodeGeneration>
+      <Checks>
+        <IOChecks Value="True"/>
+        <RangeChecks Value="True"/>
+        <OverflowChecks Value="True"/>
+        <StackChecks Value="True"/>
+      </Checks>
+    </CodeGeneration>
+    <Linking>
+      <Debugging>
+        <DebugInfoType Value="dsDwarf2Set"/>
+        <UseHeaptrc Value="True"/>
+        <UseExternalDbgSyms Value="True"/>
+      </Debugging>
+      <Options>
+        <Win32>
+          <GraphicApplication Value="True"/>
+        </Win32>
+      </Options>
+    </Linking>
+    <Other>
+      <Verbosity>
+        <ShowGenInfo Value="False"/>
+      </Verbosity>
+      <CustomOptions Value="-dDEBUG"/>
+      <OtherDefines Count="1">
+        <Define0 Value="DEBUG"/>
+      </OtherDefines>
+    </Other>
+  </CompilerOptions>
+  <Debugging>
+    <BreakPoints Count="2">
+      <Item1>
+        <Kind Value="bpkSource"/>
+        <WatchScope Value="wpsLocal"/>
+        <WatchKind Value="wpkWrite"/>
+        <Source Value="m:\home\pascal\lib\minilib\connection\db\firebird\mncFirebird.pas"/>
+        <Line Value="299"/>
+      </Item1>
+      <Item2>
+        <Kind Value="bpkSource"/>
+        <WatchScope Value="wpsLocal"/>
+        <WatchKind Value="wpkWrite"/>
+        <Source Value="M:\home\pascal\lib\minilib\connection\src\sqlite\mncSQLite.pas"/>
+        <Line Value="928"/>
+      </Item2>
+    </BreakPoints>
+    <Watches Count="3">
+      <Item1>
+        <Expression Value="@rb[0]^"/>
+        <DisplayStyle Value="wdfMemDump"/>
+      </Item1>
+      <Item2>
+        <Expression Value="@a[0]^"/>
+        <DisplayStyle Value="wdfMemDump"/>
+      </Item2>
+      <Item3>
+        <Expression Value="a"/>
+      </Item3>
+    </Watches>
+    <Exceptions Count="3">
+      <Item1>
+        <Name Value="ECodetoolError"/>
+      </Item1>
+      <Item2>
+        <Name Value="EFOpenError"/>
+      </Item2>
+      <Item3>
+        <Name Value="EmncException"/>
+      </Item3>
+    </Exceptions>
+  </Debugging>
+</CONFIG>

@@ -1,0 +1,41 @@
+object OptionsForm: TOptionsForm
+  Left = 294
+  Height = 224
+  Top = 172
+  Width = 325
+  Caption = 'Options'
+  ClientHeight = 224
+  ClientWidth = 325
+  OnCreate = FormCreate
+  LCLVersion = '1.9.0.0'
+  object OkBtn: TButton
+    Left = 8
+    Height = 25
+    Top = 189
+    Width = 75
+    Anchors = [akLeft, akBottom]
+    Caption = 'Ok'
+    Default = True
+    ModalResult = 1
+    TabOrder = 0
+  end
+  object CloseBtn: TButton
+    Left = 87
+    Height = 25
+    Top = 189
+    Width = 75
+    Anchors = [akLeft, akBottom]
+    Cancel = True
+    Caption = 'Close'
+    ModalResult = 2
+    TabOrder = 1
+  end
+  object InteractiveGridChk: TCheckBox
+    Left = 24
+    Height = 19
+    Top = 18
+    Width = 100
+    Caption = 'Interactive Grid'
+    TabOrder = 2
+  end
+end

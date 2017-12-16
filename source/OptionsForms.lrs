@@ -1,0 +1,14 @@
+LazarusResources.Add('TOptionsForm','FORMDATA',[
+  'TPF0'#12'TOptionsForm'#11'OptionsForm'#4'Left'#3'&'#1#6'Height'#3#227#0#3'To'
+  +'p'#3#172#0#5'Width'#3'O'#1#7'Caption'#6#7'Options'#12'ClientHeight'#3#227#0
+  +#11'ClientWidth'#3'O'#1#8'OnCreate'#7#10'FormCreate'#10'LCLVersion'#6#6'0.9.'
+  +'29'#0#9'TCheckBox'#13'MatRequireChk'#4'Left'#2#16#6'Height'#2#17#3'Top'#2#16
+  +#5'Width'#2'`'#7'Caption'#6#16'Material Require'#8'TabOrder'#2#0#0#0#7'TButt'
+  +'on'#5'OkBtn'#4'Left'#2#8#6'Height'#2#25#3'Top'#3#192#0#5'Width'#2'K'#7'Anch'
+  +'ors'#11#6'akLeft'#8'akBottom'#0#7'Caption'#6#2'Ok'#7'Default'#9#11'ModalRes'
+  +'ult'#2#1#8'TabOrder'#2#1#0#0#7'TButton'#8'CloseBtn'#4'Left'#3#149#0#6'Heigh'
+  +'t'#2#25#3'Top'#3#192#0#5'Width'#2'K'#7'Anchors'#11#6'akLeft'#8'akBottom'#0#6
+  +'Cancel'#9#7'Caption'#6#5'Close'#11'ModalResult'#2#2#8'TabOrder'#2#2#0#0#9'T'
+  +'CheckBox'#13'QntRequireChk'#4'Left'#2#16#6'Height'#2#17#3'Top'#2'('#5'Width'
+  +#2'd'#7'Caption'#6#16'Quantity Require'#8'TabOrder'#2#3#0#0#0
+]);
