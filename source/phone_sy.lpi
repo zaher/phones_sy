@@ -99,9 +99,8 @@
       <Unit0>
         <Filename Value="phone_sy.lpr"/>
         <IsPartOfProject Value="True"/>
-        <IsVisibleTab Value="True"/>
         <EditorIndex Value="2"/>
-        <CursorPos X="48" Y="15"/>
+        <CursorPos X="75" Y="18"/>
         <UsageCount Value="201"/>
         <Loaded Value="True"/>
       </Unit0>
@@ -111,12 +110,14 @@
         <ComponentName Value="MainForm"/>
         <HasResources Value="True"/>
         <ResourceBaseClass Value="Form"/>
+        <IsVisibleTab Value="True"/>
         <EditorIndex Value="1"/>
-        <TopLine Value="162"/>
-        <CursorPos X="27" Y="169"/>
+        <TopLine Value="227"/>
+        <CursorPos X="87" Y="240"/>
         <UsageCount Value="200"/>
-        <Bookmarks Count="1">
-          <Item0 Y="207" ID="2"/>
+        <Bookmarks Count="2">
+          <Item0 Y="222" ID="2"/>
+          <Item1 X="75" Y="241" ID="1"/>
         </Bookmarks>
         <Loaded Value="True"/>
         <LoadedDesigner Value="True"/>
@@ -1304,9 +1305,6 @@
         <TopLine Value="18"/>
         <CursorPos X="16" Y="23"/>
         <UsageCount Value="200"/>
-        <Bookmarks Count="1">
-          <Item0 X="18" Y="385" ID="1"/>
-        </Bookmarks>
         <Loaded Value="True"/>
         <LoadedDesigner Value="True"/>
       </Unit190>
@@ -1708,9 +1706,9 @@
         <Filename Value="psSQLEngine.pas"/>
         <IsPartOfProject Value="True"/>
         <EditorIndex Value="4"/>
-        <TopLine Value="377"/>
-        <CursorPos X="13" Y="401"/>
-        <UsageCount Value="171"/>
+        <TopLine Value="177"/>
+        <CursorPos X="47" Y="183"/>
+        <UsageCount Value="172"/>
         <Loaded Value="True"/>
       </Unit246>
       <Unit247>
@@ -1962,7 +1960,7 @@
         <EditorIndex Value="-1"/>
         <TopLine Value="2"/>
         <CursorPos X="80" Y="16"/>
-        <UsageCount Value="148"/>
+        <UsageCount Value="149"/>
       </Unit282>
       <Unit283>
         <Filename Value="..\bin\sql.sql"/>
@@ -1990,7 +1988,7 @@
         <IsPartOfProject Value="True"/>
         <EditorIndex Value="-1"/>
         <CursorPos X="12"/>
-        <UsageCount Value="134"/>
+        <UsageCount Value="135"/>
       </Unit286>
       <Unit287>
         <Filename Value="D:\dev\lazarus\lcl\graphics.pp"/>
@@ -2382,7 +2380,7 @@
         <Filename Value="d:\dev\fpc\3.0\src\rtl\objpas\sysutils\sysunih.inc"/>
         <TopLine Value="38"/>
         <CursorPos X="17" Y="70"/>
-        <UsageCount Value="11"/>
+        <UsageCount Value="12"/>
         <Loaded Value="True"/>
       </Unit344>
       <Unit345>
@@ -2399,123 +2397,119 @@
     <JumpHistory Count="30" HistoryIndex="29">
       <Position1>
         <Filename Value="MainForms.pas"/>
-        <Caret Line="397" Column="2" TopLine="369"/>
+        <Caret Line="191" Column="25" TopLine="164"/>
       </Position1>
       <Position2>
         <Filename Value="MainForms.pas"/>
-        <Caret Line="396" Column="2" TopLine="368"/>
       </Position2>
       <Position3>
-        <Filename Value="DataForm.pas"/>
-        <Caret Line="343" TopLine="337"/>
+        <Filename Value="MainForms.pas"/>
+        <Caret Line="167" Column="25" TopLine="140"/>
       </Position3>
       <Position4>
-        <Filename Value="psSQLEngine.pas"/>
-        <Caret Line="453" Column="3" TopLine="437"/>
+        <Filename Value="MainForms.pas"/>
+        <Caret Line="191" Column="25" TopLine="164"/>
       </Position4>
       <Position5>
-        <Filename Value="psSQLEngine.pas"/>
-        <Caret Line="157" Column="17" TopLine="148"/>
+        <Filename Value="MainForms.pas"/>
       </Position5>
       <Position6>
-        <Filename Value="psSQLEngine.pas"/>
-        <Caret Line="570" TopLine="544"/>
+        <Filename Value="MainForms.pas"/>
+        <Caret Line="172" Column="25" TopLine="145"/>
       </Position6>
       <Position7>
-        <Filename Value="OptionsForms.pas"/>
-        <Caret Line="72" Column="43" TopLine="67"/>
+        <Filename Value="MainForms.pas"/>
+        <Caret Line="191" Column="38" TopLine="164"/>
       </Position7>
       <Position8>
-        <Filename Value="OptionsForms.pas"/>
-        <Caret Line="71" Column="43" TopLine="66"/>
+        <Filename Value="MainForms.pas"/>
       </Position8>
       <Position9>
-        <Filename Value="OptionsForms.pas"/>
-        <Caret Line="70" Column="43" TopLine="65"/>
+        <Filename Value="MainForms.pas"/>
+        <Caret Line="172" Column="38" TopLine="145"/>
       </Position9>
       <Position10>
-        <Filename Value="OptionsForms.pas"/>
-        <Caret Line="69" Column="43" TopLine="64"/>
+        <Filename Value="MainForms.pas"/>
+        <Caret Line="191" Column="7" TopLine="164"/>
       </Position10>
       <Position11>
-        <Filename Value="OptionsForms.pas"/>
-        <Caret Line="68" Column="43" TopLine="63"/>
+        <Filename Value="MainForms.pas"/>
       </Position11>
       <Position12>
-        <Filename Value="OptionsForms.pas"/>
-        <Caret Line="67" Column="43" TopLine="62"/>
+        <Filename Value="MainForms.pas"/>
+        <Caret Line="153" Column="31" TopLine="146"/>
       </Position12>
       <Position13>
-        <Filename Value="OptionsForms.pas"/>
-        <Caret Line="66" Column="43" TopLine="61"/>
+        <Filename Value="MainForms.pas"/>
+        <Caret Line="299" Column="49" TopLine="288"/>
       </Position13>
       <Position14>
-        <Filename Value="OptionsForms.pas"/>
-        <Caret Line="65" Column="43" TopLine="60"/>
+        <Filename Value="MainForms.pas"/>
+        <Caret Line="241" Column="81" TopLine="224"/>
       </Position14>
       <Position15>
-        <Filename Value="OptionsForms.pas"/>
-        <Caret Line="64" Column="43" TopLine="59"/>
+        <Filename Value="MainForms.pas"/>
+        <Caret Line="174" TopLine="154"/>
       </Position15>
       <Position16>
-        <Filename Value="psSQLEngine.pas"/>
-        <Caret Line="374" Column="13" TopLine="358"/>
+        <Filename Value="MainForms.pas"/>
+        <Caret Line="175" TopLine="154"/>
       </Position16>
       <Position17>
-        <Filename Value="psSQLEngine.pas"/>
-        <Caret Line="401" Column="13" TopLine="377"/>
+        <Filename Value="MainForms.pas"/>
+        <Caret Line="174" Column="21" TopLine="154"/>
       </Position17>
       <Position18>
-        <Filename Value="OptionsForms.pas"/>
-        <Caret Line="48" TopLine="34"/>
+        <Filename Value="MainForms.pas"/>
+        <Caret Line="194" TopLine="167"/>
       </Position18>
       <Position19>
-        <Filename Value="OptionsForms.pas"/>
-        <Caret Line="59" TopLine="43"/>
+        <Filename Value="MainForms.pas"/>
+        <Caret Line="195" TopLine="168"/>
       </Position19>
       <Position20>
-        <Filename Value="OptionsForms.pas"/>
-        <Caret Line="73" Column="7" TopLine="49"/>
+        <Filename Value="MainForms.pas"/>
+        <Caret Line="188" Column="79" TopLine="169"/>
       </Position20>
       <Position21>
-        <Filename Value="OptionsForms.pas"/>
-        <Caret Line="22" TopLine="6"/>
+        <Filename Value="MainForms.pas"/>
+        <Caret Line="174" TopLine="168"/>
       </Position21>
       <Position22>
-        <Filename Value="OptionsForms.pas"/>
-        <Caret Line="71" TopLine="47"/>
+        <Filename Value="MainForms.pas"/>
+        <Caret Line="175" TopLine="168"/>
       </Position22>
       <Position23>
         <Filename Value="MainForms.pas"/>
-        <Caret Line="80" TopLine="57"/>
+        <Caret Line="176" TopLine="168"/>
       </Position23>
       <Position24>
         <Filename Value="MainForms.pas"/>
-        <Caret Line="90" Column="24" TopLine="75"/>
+        <Caret Line="241" Column="82" TopLine="226"/>
       </Position24>
       <Position25>
         <Filename Value="MainForms.pas"/>
-        <Caret Line="201" Column="7" TopLine="185"/>
+        <Caret Line="174" Column="21" TopLine="154"/>
       </Position25>
       <Position26>
         <Filename Value="MainForms.pas"/>
-        <Caret Line="167" TopLine="151"/>
+        <Caret Line="2" Column="16"/>
       </Position26>
       <Position27>
         <Filename Value="MainForms.pas"/>
-        <Caret Line="85" Column="19" TopLine="82"/>
+        <Caret Line="174" TopLine="158"/>
       </Position27>
       <Position28>
         <Filename Value="MainForms.pas"/>
-        <Caret Line="268" Column="3" TopLine="263"/>
+        <Caret Line="175" TopLine="158"/>
       </Position28>
       <Position29>
         <Filename Value="MainForms.pas"/>
-        <Caret Line="83" Column="15" TopLine="70"/>
+        <Caret Line="208" TopLine="191"/>
       </Position29>
       <Position30>
         <Filename Value="MainForms.pas"/>
-        <Caret Line="169" Column="27" TopLine="162"/>
+        <Caret Line="242" Column="108" TopLine="227"/>
       </Position30>
     </JumpHistory>
   </ProjectOptions>

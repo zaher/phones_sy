@@ -41,7 +41,6 @@ object GridDataForm: TGridDataForm
       Top = 2
       Width = 193
       Align = alClient
-      Alignment = taRightJustify
       AutoSize = False
       Caption = '0'
       Layout = tlCenter

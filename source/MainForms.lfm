@@ -75,6 +75,17 @@ object MainForm: TMainForm
       OnClick = ExportBtnClick
       TabOrder = 2
     end
+    object Button2: TButton
+      Left = 0
+      Height = 25
+      Top = 109
+      Width = 110
+      Anchors = [akTop, akLeft, akRight]
+      Caption = '&مسح'
+      OnClick = Button2Click
+      TabOrder = 5
+      Visible = False
+    end
   end
   object Panel1: TPanel
     Left = 120
@@ -174,6 +185,14 @@ object MainForm: TMainForm
         Caption = 'العنوان'
         ParentColor = False
         ParentFont = False
+      end
+      object Label6: TLabel
+        Left = 3
+        Height = 15
+        Top = 163
+        Width = 306
+        Caption = 'لبحث في السجلات عن كل الحقول السابقة تحوي الكلمة المكتوبة'
+        ParentColor = False
       end
     end
   end

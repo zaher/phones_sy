@@ -1,5 +1,5 @@
 unit MainForms;
-
+{$codepage utf8}
 {$mode delphi}{$H+}
 {$include phone_sy.inc}
 
@@ -32,6 +32,7 @@ type
     Label3: TLabel;
     Label4: TLabel;
     Label5: TLabel;
+    Label6: TLabel;
     NameEdit: TEdit;
     Label1: TLabel;
     LastIDlbl: TLabel;
@@ -68,6 +69,7 @@ type
     Splitter2: TSplitter;
 
     procedure Button1Click(Sender: TObject);
+    procedure Button2Click(Sender: TObject);
 
     procedure FindBtnClick(Sender: TObject);
     procedure FormClose(Sender: TObject; var CloseAction: TCloseAction);
@@ -160,6 +162,19 @@ begin
   end;
 end;
 
+function ConvertToArabic(s: utf8string): RawByteString;
+begin
+  Result := CP1256ToUTF8(UTF8ToCP1252(s, false));
+end;
+
+function ConvertToLatin(s: utf8string): utf8string;
+var
+  rb: RawByteString;
+begin
+  rb := CP1252ToUTF8(UTF8ToCP1256(s, false));
+  Result := rb;
+end;
+
 function TMainForm.GetFindSQL: string;
 var
   i: integer;
@@ -218,6 +233,13 @@ begin
   begin
     FindFields[i].Edit.Text := '';
   end
+end;
+
+procedure TMainForm.Button2Click(Sender: TObject);
+begin
+  //ExecuteScript(dgkData, 'select * from CatNDX0');
+  //ExecuteScript(dgkData, 'select * from CatNDX1 where FullName like "%'+ConvertToLatin('ديركي')+'%"');
+  ExecuteScript(dgkData, 'select * from Tbl011 where LName like "%'+ConvertToLatin('ديركي')+'%"');
 end;
 
 procedure TMainForm.FindBtnClick(Sender: TObject);

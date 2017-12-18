@@ -7,8 +7,8 @@ unit psSQLEngine;
 interface
 
 uses
-  Forms, SysUtils, Classes, DateUtils, Graphics, strutils,
-  IniFiles, MsgBox,
+  Forms, SysUtils, Classes, DateUtils, Graphics,
+  MsgBox,
   mncConnections,
   psSqlUtils, Dialogs,
   mncCSV, mncSQL, mncDB,
@@ -189,8 +189,7 @@ var
 implementation
 
 uses
-  mnUtils,
-  mnStreams;
+  mnUtils;
 
 function GetWorkPath: String;
 begin
@@ -244,6 +243,7 @@ var
       Result := vStr;
   end;
 begin
+  Result := '';
   g := vDuration < 0;
   vDuration := abs(vDuration);
   h := trunc(vDuration) div 3600;
@@ -310,6 +310,7 @@ var
       Result := vStr;
   end;
 begin
+  Result := '';
   g := ms < 0;
 
   ms := abs(ms);
@@ -435,19 +436,22 @@ begin
 end;
 
 constructor TpsSQLEngine.Create;
-var
-  ini: TiniFile;
-  dbType: string;
 begin
   inherited;
   Tables := TStringList.Create;
   FieldNames := TStringList.Create;
 
-  FieldNames.Values['PhoneNum'] := 'Phone';
+{  FieldNames.Values['PhoneNum'] := 'Phone';
   FieldNames.Values['FName'] := 'Name';
   FieldNames.Values['LName'] := 'Family';
   FieldNames.Values['FATHR'] := 'Father';
   FieldNames.Values['ADDRSS'] := 'Address';
+}
+  FieldNames.Values['PhoneNum'] := 'الهاتف';
+  FieldNames.Values['FName'] := 'الاسم';
+  FieldNames.Values['LName'] := 'العائلة';
+  FieldNames.Values['FATHR'] := 'الأب';
+  FieldNames.Values['ADDRSS'] := 'العنوان';
 
   FieldWidths := TStringList.Create;
   FieldWidths.Values['PhoneNum'] := '100';
@@ -465,32 +469,7 @@ begin
   DefaultSQLEngine := sqleSQLite;
   DefaultSQLQuoted := False;
 
-  if not FileExists(Application.Location + 'config.ini') then
-  begin
-    ini := TiniFile.Create(Application.Location + 'config.ini');
-    try
-      ini.WriteString('options', 'type', 'sqlite');
-      ini.WriteString('mysql', 'host', '');
-      ini.WriteString('mysql', 'username', 'user');
-      ini.WriteString('mysql', 'password', 'pass');
-    finally
-      ini.Free;
-    end;
-  end
-  else
-  begin
-    ini := TiniFile.Create(Application.Location + 'config.ini');
-    try
-      dbType := ini.ReadString('options', 'type', 'sqlite');
-      FHost := ini.ReadString(dbType, 'host', '');
-      FUserName := ini.ReadString(dbType, 'username', '');
-      FPassword := ini.ReadString(dbType, 'password', '');
-    finally
-      ini.Free;
-    end;
-  end;
-
-  FConnection := (Engines.CreateByName(dbType) as TmncSQLConnection);
+  FConnection := (Engines.CreateByName('sqlite') as TmncSQLConnection);
   FSession := Connection.CreateSession;
   FConnection.Host := FHost;
   FConnection.UserName := FUserName;
