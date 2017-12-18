@@ -3,11 +3,15 @@ object GridDataForm: TGridDataForm
   Height = 257
   Top = 237
   Width = 807
+  BiDiMode = bdRightToLeft
   Caption = 'Data'
   ClientHeight = 257
   ClientWidth = 807
+  KeyPreview = True
   OnClose = FormClose
   OnCreate = FormCreate
+  OnKeyDown = FormKeyDown
+  ParentBiDiMode = False
   Position = poDefault
   LCLVersion = '1.9.0.0'
   object Panel2: TPanel
@@ -156,7 +160,7 @@ object GridDataForm: TGridDataForm
     OnDrawCell = DataGridDrawCell
     OnKeyDown = DataGridKeyDown
     ColWidths = (
-      22
+      53
       77
       77
     )
@@ -650,24 +654,31 @@ object GridDataForm: TGridDataForm
     left = 136
     top = 136
     object MenuItem3: TMenuItem
-      Caption = 'Copy'
+      Caption = 'نسخ'
       OnClick = MenuItem3Click
     end
     object MenuItem23: TMenuItem
-      Caption = 'Delete Rows'
+      Caption = 'حذف الاسطر'
       OnClick = MenuItem23Click
     end
     object MenuItem26: TMenuItem
-      Caption = 'Delete Columns'
+      Caption = 'حذف الاعمدة'
       OnClick = MenuItem26Click
     end
     object MenuItem18: TMenuItem
-      Caption = 'Sort Ascending'
+      Caption = 'ترتيب تصاعدي'
       OnClick = MenuItem18Click
     end
     object MenuItem17: TMenuItem
-      Caption = 'Sort Descending'
+      Caption = 'ترتيب تنازلي'
       OnClick = MenuItem17Click
+    end
+    object MenuItem1: TMenuItem
+      Caption = '-'
+    end
+    object SearchNumber: TMenuItem
+      Caption = 'بحث عن'
+      OnClick = SearchNumberClick
     end
   end
   object ImportOpenDialog: TOpenDialog

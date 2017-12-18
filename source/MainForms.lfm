@@ -75,17 +75,6 @@ object MainForm: TMainForm
       OnClick = ExportBtnClick
       TabOrder = 2
     end
-    object Button2: TButton
-      Left = 0
-      Height = 25
-      Top = 109
-      Width = 110
-      Anchors = [akTop, akLeft, akRight]
-      Caption = '&مسح'
-      OnClick = Button2Click
-      TabOrder = 5
-      Visible = False
-    end
   end
   object Panel1: TPanel
     Left = 120
@@ -187,11 +176,27 @@ object MainForm: TMainForm
         ParentFont = False
       end
       object Label6: TLabel
-        Left = 3
+        Left = 5
         Height = 15
         Top = 163
-        Width = 306
-        Caption = 'لبحث في السجلات عن كل الحقول السابقة تحوي الكلمة المكتوبة'
+        Width = 309
+        Caption = 'البحث في السجلات عن كل الحقول السابقة تحوي الكلمة المكتوبة'
+        ParentColor = False
+      end
+      object Label7: TLabel
+        Left = 75
+        Height = 15
+        Top = 185
+        Width = 239
+        Caption = 'استخدم * من اجل عدد غير محدد من الحروف، او %'
+        ParentColor = False
+      end
+      object Label8: TLabel
+        Left = 182
+        Height = 15
+        Top = 210
+        Width = 132
+        Caption = 'استخدم ؟ بدل الحرف الواحد'
         ParentColor = False
       end
     end
@@ -206,7 +211,7 @@ object MainForm: TMainForm
     DefaultExt = '.csv'
     FileName = '*.csv'
     Filter = 'CSV files|*.csv|All files|*.*'
-    left = 339
-    top = 180
+    left = 58
+    top = 109
   end
 end

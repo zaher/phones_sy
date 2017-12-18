@@ -23,8 +23,10 @@ type
     FetchCountLbl: TLabel;
     FetchedLbl: TLabel;
     ImportOpenDialog: TOpenDialog;
+    MenuItem1: TMenuItem;
     MenuItem17: TMenuItem;
     MenuItem18: TMenuItem;
+    SearchNumber: TMenuItem;
     MenuItem23: TMenuItem;
     MenuItem26: TMenuItem;
     SaveGrisBtn1: TButton;
@@ -47,6 +49,7 @@ type
       procedure DataGridPrepareCanvas(sender: TObject; aCol, aRow: Integer; aState: TGridDrawState);
       procedure FormClose(Sender: TObject; var CloseAction: TCloseAction);
       procedure FormCreate(Sender: TObject);
+      procedure FormKeyDown(Sender: TObject; var Key: Word; Shift: TShiftState);
       procedure MenuItem17Click(Sender: TObject);
       procedure MenuItem18Click(Sender: TObject);
       procedure MenuItem19Click(Sender: TObject);
@@ -56,6 +59,7 @@ type
       procedure MenuItem26Click(Sender: TObject);
       procedure MenuItem3Click(Sender: TObject);
       procedure SaveGrisBtn1Click(Sender: TObject);
+      procedure SearchNumberClick(Sender: TObject);
       procedure StopBtn2Click(Sender: TObject);
       procedure StopBtn3Click(Sender: TObject);
       procedure StopBtn4Click(Sender: TObject);
@@ -69,6 +73,7 @@ type
     FSQL: TStringList;
     FList: TStringList;
     IsNumbers: array of boolean;
+    FFields: TStringList;
 
     function GetIsNumber(Col:integer): Boolean;
     procedure SetDataKind(AValue: TDataGridKind);
@@ -174,6 +179,12 @@ begin
   ClearGrid;
 end;
 
+procedure TGridDataForm.FormKeyDown(Sender: TObject; var Key: Word; Shift: TShiftState);
+begin
+  if Key = VK_ESCAPE then
+    FCancel := True;
+end;
+
 procedure TGridDataForm.MenuItem17Click(Sender: TObject);
 begin
   DataGrid.SortOrder := soDescending; // or soAscending
@@ -257,6 +268,11 @@ end;
 procedure TGridDataForm.SaveGrisBtn1Click(Sender: TObject);
 begin
   ImportGrid;
+end;
+
+procedure TGridDataForm.SearchNumberClick(Sender: TObject);
+begin
+  MainForm.ExecuteScript(dgkData, MainForm.GetFindSQLBy(FFields[DataGrid.Col - 1], DataGrid.Cells[DataGrid.Col, DataGrid.Row]));
 end;
 
 procedure TGridDataForm.StopBtn2Click(Sender: TObject);
@@ -377,6 +393,7 @@ begin
 
       for i := 0 to cols - 1 do
       begin
+        FFields.Add(SQLCMD.Columns[i].Name);
         s := Engine.FieldNames.Values[SQLCMD.Columns[i].Name];
         if s = '' then
           s := SQLCMD.Columns[i].Name;
@@ -451,6 +468,7 @@ begin
   inherited Create(TheOwner);
   FList:=TStringList.Create;
   FSQL := TStringList.Create;
+  FFields := TStringList.Create;
   LogEdit.Clear;
 end;
 
@@ -458,6 +476,7 @@ destructor TGridDataForm.Destroy;
 begin
   FList.Free;
   FSQL.Free;
+  FFields.Free;
   inherited Destroy;
 end;
 
@@ -635,7 +654,8 @@ begin
       end;
       if aStrings.Count > 0 then
         Execute(SQLCMD, aStrings, aTitle, vList);
-      SQLCMD.Close;
+      if SQLCMD.Active then
+        SQLCMD.Close;
       SQLCMD.Session.Commit(true);
     except
       on E: Exception do

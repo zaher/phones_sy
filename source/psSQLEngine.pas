@@ -7,7 +7,7 @@ unit psSQLEngine;
 interface
 
 uses
-  Forms, SysUtils, Classes, DateUtils, Graphics,
+  Forms, SysUtils, Classes, DateUtils, Graphics, LConvEncoding,
   MsgBox,
   mncConnections,
   psSqlUtils, Dialogs,
@@ -160,6 +160,7 @@ type
     FieldWidths: TStringList;
     constructor Create;
     destructor Destroy; override;
+    procedure FixStupidData;
     procedure EnumTables(vTables: TStringList);
     function CreateCMD: TpsCMD;
     procedure ExecuteFile(SQLFile: string);
@@ -181,6 +182,9 @@ function DurationToString(vDuration: Integer; TimeSeparator: string): string;
 function StringToDuration(S: String; TimeSeparator: Char): Integer;
 function TickToString(ms: Integer): string;
 
+function ConvertToArabic(s: utf8string): RawByteString;
+function ConvertToLatin(s: utf8string): utf8string;
+
 function GetWorkPath: String;
 
 var
@@ -190,6 +194,19 @@ implementation
 
 uses
   mnUtils;
+
+function ConvertToArabic(s: utf8string): RawByteString;
+begin
+  Result := CP1256ToUTF8(UTF8ToCP1252(s, false));
+end;
+
+function ConvertToLatin(s: utf8string): utf8string;
+var
+  rb: RawByteString;
+begin
+  rb := CP1252ToUTF8(UTF8ToCP1256(s, false));
+  Result := rb;
+end;
 
 function GetWorkPath: String;
 begin
@@ -357,58 +374,33 @@ begin
   begin
     if not FConnection.Connected then
     begin
-      if Connection.IsModel('SQLite') then
-      begin
-        FConnection.Resource := WorkPath + 'data.sqlite';
-        FConnection.AutoCreate := True;
-        (FConnection as TmncSQLiteConnection).Exclusive := True;
-        //(FConnection as TmncSQLiteConnection).JournalMode := jrmMemory;
-        (FConnection as TmncSQLiteConnection).JournalMode := jrmTruncate;
-        (FConnection as TmncSQLiteConnection).TempStore := tmpFile;
-        s := FConnection.Resource;
-        if not FileExists(s) then
-        begin
-          FConnection.Connect;
-          FConnection.Execute('PRAGMA page_size = 4096');
-          FConnection.Execute('PRAGMA cache_size=10000');
-          Session.Start;
-          //CreateMetaData;
-        end
-        else
-        begin
-          FConnection.Connect;
-          FConnection.Execute('PRAGMA page_size = 4096');
-          FConnection.Execute('PRAGMA cache_size=10000');
-        end;
-      end
-      else if Connection.IsModel('MySQL') then
+      FConnection.Resource := WorkPath + 'data.sqlite';
+      FConnection.AutoCreate := False;
+      (FConnection as TmncSQLiteConnection).Exclusive := True;
+      //(FConnection as TmncSQLiteConnection).JournalMode := jrmMemory;
+      //(FConnection as TmncSQLiteConnection).JournalMode := jrmTruncate;
+      (FConnection as TmncSQLiteConnection).TempStore := tmpFile;
+      s := FConnection.Resource;
+      if not FileExists(s) then
       begin
         FConnection.Connect;
-        (Connection as TmncMySQLConnection).SetStorageEngine('MYISAM');
-        FConnection.Resource := 'phone_sy';
-        if not (FConnection as TmncMySQLConnection).SelectDatabase('phone_sy', false) then
-        begin
-          (FConnection as TmncMySQLConnection).CreateDatabase('phone_sy', true);
-          (FConnection as TmncMySQLConnection).SelectDatabase('phone_sy');
-          FSession.Start;
-          ///CreateMetaData;
-        end;
+        FConnection.Execute('PRAGMA page_size = 4096');
+        FConnection.Execute('PRAGMA cache_size=10000');
+        Session.Start;
+        //CreateMetaData;
       end
-      else if Connection.IsModel('PostgreSQL') then
+      else
       begin
-        FConnection.Resource := 'phone_sy';
-        try
-          FConnection.CreateDatabase(FConnection.Resource, false);
-          //CreateMetaData;
-        except
-        end;
         FConnection.Connect;
+        FConnection.Execute('PRAGMA page_size = 4096');
+        FConnection.Execute('PRAGMA cache_size=10000');
       end;
       if not FSession.Active then
       begin
         FSession.Start;
         Tables.Clear;
         EnumTables(Tables);
+        FixStupidData;
       end;
     end;
   end;
@@ -547,6 +539,31 @@ begin
   FreeAndNil(FieldNames);
   FreeAndNil(FieldWidths);
   inherited;
+end;
+
+procedure TpsSQLEngine.FixStupidData;
+var
+  CMD: TpsCMD;
+  i: Integer;
+begin
+  CMD := CreateCMD;
+  try
+    CMD.SQL.Text := 'SELECT * FROM sqlite_master WHERE type="table" and name = "Options"';
+    if not CMD.Execute then
+    begin
+      CMD.Close;
+      CMD.SQL.Text := 'create table Options(ID integer PRIMARY KEY, Name varchar(25), Value varchar(25))';
+      CMD.Execute;
+      for i := 0 to Tables.Count -1 do
+      begin
+        CMD.SQL.Text := 'update '+Tables[i]+' set PhoneNum = PhoneNum - 54321';
+        CMD.Execute;
+      end;
+    end;
+    Session.CommitRetaining;
+  finally
+    FreeAndNil(CMD);
+  end
 end;
 
 function TpsSQLEngine.GetActive: Boolean;

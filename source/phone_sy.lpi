@@ -8,7 +8,14 @@
       <ResourceType Value="res"/>
       <UseXPManifest Value="True"/>
     </General>
-    <BuildModes Count="2" Active="Debug">
+    <VersionInfo>
+      <UseVersionInfo Value="True"/>
+      <AutoIncrementBuild Value="True"/>
+      <MajorVersionNr Value="1"/>
+      <RevisionNr Value="1"/>
+      <BuildNr Value="52"/>
+    </VersionInfo>
+    <BuildModes Count="2" Active="Release">
       <Item1 Name="Debug" Default="True"/>
       <Item2 Name="Release">
         <CompilerOptions>
@@ -95,11 +102,11 @@
         <PackageName Value="LCL"/>
       </Item9>
     </RequiredPackages>
-    <Units Count="346">
+    <Units Count="349">
       <Unit0>
         <Filename Value="phone_sy.lpr"/>
         <IsPartOfProject Value="True"/>
-        <EditorIndex Value="2"/>
+        <EditorIndex Value="4"/>
         <CursorPos X="75" Y="18"/>
         <UsageCount Value="201"/>
         <Loaded Value="True"/>
@@ -112,15 +119,14 @@
         <ResourceBaseClass Value="Form"/>
         <IsVisibleTab Value="True"/>
         <EditorIndex Value="1"/>
-        <TopLine Value="227"/>
-        <CursorPos X="87" Y="240"/>
+        <TopLine Value="186"/>
+        <CursorPos X="90" Y="208"/>
         <UsageCount Value="200"/>
         <Bookmarks Count="2">
-          <Item0 Y="222" ID="2"/>
-          <Item1 X="75" Y="241" ID="1"/>
+          <Item0 Y="236" ID="2"/>
+          <Item1 X="21" Y="203" ID="1"/>
         </Bookmarks>
         <Loaded Value="True"/>
-        <LoadedDesigner Value="True"/>
       </Unit1>
       <Unit2>
         <Filename Value="PlacesForms.pas"/>
@@ -471,7 +477,7 @@
         <ComponentName Value="OptionsForm"/>
         <HasResources Value="True"/>
         <ResourceBaseClass Value="Form"/>
-        <EditorIndex Value="5"/>
+        <EditorIndex Value="8"/>
         <TopLine Value="47"/>
         <CursorPos Y="71"/>
         <UsageCount Value="202"/>
@@ -1301,9 +1307,9 @@
         <ComponentName Value="GridDataForm"/>
         <HasResources Value="True"/>
         <ResourceBaseClass Value="Form"/>
-        <EditorIndex Value="3"/>
-        <TopLine Value="18"/>
-        <CursorPos X="16" Y="23"/>
+        <EditorIndex Value="5"/>
+        <TopLine Value="638"/>
+        <CursorPos X="31" Y="650"/>
         <UsageCount Value="200"/>
         <Loaded Value="True"/>
         <LoadedDesigner Value="True"/>
@@ -1705,10 +1711,9 @@
       <Unit246>
         <Filename Value="psSQLEngine.pas"/>
         <IsPartOfProject Value="True"/>
-        <EditorIndex Value="4"/>
-        <TopLine Value="177"/>
-        <CursorPos X="47" Y="183"/>
-        <UsageCount Value="172"/>
+        <EditorIndex Value="6"/>
+        <CursorPos X="64" Y="10"/>
+        <UsageCount Value="174"/>
         <Loaded Value="True"/>
       </Unit246>
       <Unit247>
@@ -1960,7 +1965,7 @@
         <EditorIndex Value="-1"/>
         <TopLine Value="2"/>
         <CursorPos X="80" Y="16"/>
-        <UsageCount Value="149"/>
+        <UsageCount Value="151"/>
       </Unit282>
       <Unit283>
         <Filename Value="..\bin\sql.sql"/>
@@ -1988,7 +1993,7 @@
         <IsPartOfProject Value="True"/>
         <EditorIndex Value="-1"/>
         <CursorPos X="12"/>
-        <UsageCount Value="135"/>
+        <UsageCount Value="137"/>
       </Unit286>
       <Unit287>
         <Filename Value="D:\dev\lazarus\lcl\graphics.pp"/>
@@ -2328,10 +2333,11 @@
       </Unit336>
       <Unit337>
         <Filename Value="M:\home\pascal\lib\minilib\connection\src\mncConnections.pas"/>
-        <EditorIndex Value="-1"/>
-        <TopLine Value="305"/>
-        <CursorPos X="14" Y="322"/>
-        <UsageCount Value="9"/>
+        <EditorIndex Value="7"/>
+        <TopLine Value="981"/>
+        <CursorPos Y="1008"/>
+        <UsageCount Value="11"/>
+        <Loaded Value="True"/>
       </Unit337>
       <Unit338>
         <Filename Value="M:\home\pascal\lib\minilib\connection\src\sqlite\mncSQLite.pas"/>
@@ -2380,7 +2386,7 @@
         <Filename Value="d:\dev\fpc\3.0\src\rtl\objpas\sysutils\sysunih.inc"/>
         <TopLine Value="38"/>
         <CursorPos X="17" Y="70"/>
-        <UsageCount Value="12"/>
+        <UsageCount Value="13"/>
         <Loaded Value="True"/>
       </Unit344>
       <Unit345>
@@ -2390,126 +2396,148 @@
         <CursorPos X="6" Y="1461"/>
         <UsageCount Value="10"/>
       </Unit345>
+      <Unit346>
+        <Filename Value="M:\ramez\phonesum\bin\init-sqlite.sql"/>
+        <EditorIndex Value="-1"/>
+        <CursorPos X="19" Y="7"/>
+        <UsageCount Value="10"/>
+        <DefaultSyntaxHighlighter Value="SQL"/>
+      </Unit346>
+      <Unit347>
+        <Filename Value="d:\dev\fpc\3.0\src\packages\rtl-objpas\src\inc\strutils.pp"/>
+        <EditorIndex Value="2"/>
+        <TopLine Value="225"/>
+        <CursorPos X="76" Y="245"/>
+        <UsageCount Value="10"/>
+        <Loaded Value="True"/>
+      </Unit347>
+      <Unit348>
+        <Filename Value="d:\dev\fpc\3.0\src\rtl\objpas\sysutils\sysstrh.inc"/>
+        <EditorIndex Value="3"/>
+        <CursorPos X="40" Y="27"/>
+        <UsageCount Value="10"/>
+        <Loaded Value="True"/>
+      </Unit348>
     </Units>
-    <OtherDefines Count="1">
-      <Define0 Value="DEBUG"/>
-    </OtherDefines>
     <JumpHistory Count="30" HistoryIndex="29">
       <Position1>
-        <Filename Value="MainForms.pas"/>
-        <Caret Line="191" Column="25" TopLine="164"/>
+        <Filename Value="M:\home\pascal\lib\minilib\connection\src\mncConnections.pas"/>
+        <Caret Line="1117" TopLine="1085"/>
       </Position1>
       <Position2>
-        <Filename Value="MainForms.pas"/>
+        <Filename Value="M:\home\pascal\lib\minilib\connection\src\mncConnections.pas"/>
       </Position2>
       <Position3>
-        <Filename Value="MainForms.pas"/>
-        <Caret Line="167" Column="25" TopLine="140"/>
+        <Filename Value="M:\home\pascal\lib\minilib\connection\src\mncConnections.pas"/>
+        <Caret Line="1008" Column="52" TopLine="981"/>
       </Position3>
       <Position4>
-        <Filename Value="MainForms.pas"/>
-        <Caret Line="191" Column="25" TopLine="164"/>
+        <Filename Value="DataForm.pas"/>
+        <Caret Line="657" TopLine="645"/>
       </Position4>
       <Position5>
-        <Filename Value="MainForms.pas"/>
+        <Filename Value="M:\home\pascal\lib\minilib\connection\src\mncConnections.pas"/>
+        <Caret Line="1008" TopLine="981"/>
       </Position5>
       <Position6>
-        <Filename Value="MainForms.pas"/>
-        <Caret Line="172" Column="25" TopLine="145"/>
+        <Filename Value="DataForm.pas"/>
+        <Caret Line="656" Column="12" TopLine="642"/>
       </Position6>
       <Position7>
-        <Filename Value="MainForms.pas"/>
-        <Caret Line="191" Column="38" TopLine="164"/>
+        <Filename Value="DataForm.pas"/>
+        <Caret Line="615" Column="13" TopLine="587"/>
       </Position7>
       <Position8>
         <Filename Value="MainForms.pas"/>
+        <Caret Line="295" TopLine="279"/>
       </Position8>
       <Position9>
         <Filename Value="MainForms.pas"/>
-        <Caret Line="172" Column="38" TopLine="145"/>
+        <Caret Line="86" Column="15" TopLine="71"/>
       </Position9>
       <Position10>
         <Filename Value="MainForms.pas"/>
-        <Caret Line="191" Column="7" TopLine="164"/>
+        <Caret Line="172" Column="3" TopLine="167"/>
       </Position10>
       <Position11>
         <Filename Value="MainForms.pas"/>
+        <Caret Line="87" Column="14" TopLine="67"/>
       </Position11>
       <Position12>
         <Filename Value="MainForms.pas"/>
-        <Caret Line="153" Column="31" TopLine="146"/>
+        <Caret Line="202" Column="21" TopLine="183"/>
       </Position12>
       <Position13>
         <Filename Value="MainForms.pas"/>
-        <Caret Line="299" Column="49" TopLine="288"/>
+        <Caret Line="10" Column="31"/>
       </Position13>
       <Position14>
         <Filename Value="MainForms.pas"/>
-        <Caret Line="241" Column="81" TopLine="224"/>
+        <Caret Line="205" Column="40" TopLine="182"/>
       </Position14>
       <Position15>
         <Filename Value="MainForms.pas"/>
-        <Caret Line="174" TopLine="154"/>
+        <Caret Line="200" Column="7" TopLine="180"/>
       </Position15>
       <Position16>
         <Filename Value="MainForms.pas"/>
-        <Caret Line="175" TopLine="154"/>
+        <Caret Line="208" Column="90" TopLine="180"/>
       </Position16>
       <Position17>
         <Filename Value="MainForms.pas"/>
-        <Caret Line="174" Column="21" TopLine="154"/>
+        <Caret Line="200" Column="35" TopLine="180"/>
       </Position17>
       <Position18>
         <Filename Value="MainForms.pas"/>
-        <Caret Line="194" TopLine="167"/>
+        <Caret Line="199" TopLine="181"/>
       </Position18>
       <Position19>
         <Filename Value="MainForms.pas"/>
-        <Caret Line="195" TopLine="168"/>
+        <Caret Line="200" TopLine="181"/>
       </Position19>
       <Position20>
         <Filename Value="MainForms.pas"/>
-        <Caret Line="188" Column="79" TopLine="169"/>
+        <Caret Line="205" Column="9" TopLine="175"/>
       </Position20>
       <Position21>
         <Filename Value="MainForms.pas"/>
-        <Caret Line="174" TopLine="168"/>
+        <Caret Line="204" Column="35" TopLine="186"/>
       </Position21>
       <Position22>
         <Filename Value="MainForms.pas"/>
-        <Caret Line="175" TopLine="168"/>
+        <Caret Line="200" TopLine="186"/>
       </Position22>
       <Position23>
         <Filename Value="MainForms.pas"/>
-        <Caret Line="176" TopLine="168"/>
+        <Caret Line="201" Column="9" TopLine="186"/>
       </Position23>
       <Position24>
         <Filename Value="MainForms.pas"/>
-        <Caret Line="241" Column="82" TopLine="226"/>
+        <Caret Line="200" TopLine="186"/>
       </Position24>
       <Position25>
         <Filename Value="MainForms.pas"/>
-        <Caret Line="174" Column="21" TopLine="154"/>
+        <Caret Line="201" TopLine="186"/>
       </Position25>
       <Position26>
         <Filename Value="MainForms.pas"/>
-        <Caret Line="2" Column="16"/>
+        <Caret Line="202" TopLine="186"/>
       </Position26>
       <Position27>
         <Filename Value="MainForms.pas"/>
-        <Caret Line="174" TopLine="158"/>
+        <Caret Line="203" TopLine="186"/>
       </Position27>
       <Position28>
         <Filename Value="MainForms.pas"/>
-        <Caret Line="175" TopLine="158"/>
+        <Caret Line="204" TopLine="186"/>
       </Position28>
       <Position29>
         <Filename Value="MainForms.pas"/>
-        <Caret Line="208" TopLine="191"/>
+        <Caret Line="205" TopLine="186"/>
       </Position29>
       <Position30>
         <Filename Value="MainForms.pas"/>
-        <Caret Line="242" Column="108" TopLine="227"/>
+        <Caret Line="206" TopLine="186"/>
       </Position30>
     </JumpHistory>
   </ProjectOptions>
@@ -2561,7 +2589,7 @@
     </Other>
   </CompilerOptions>
   <Debugging>
-    <BreakPoints Count="2">
+    <BreakPoints Count="4">
       <Item1>
         <Kind Value="bpkSource"/>
         <WatchScope Value="wpsLocal"/>
@@ -2576,6 +2604,20 @@
         <Source Value="M:\home\pascal\lib\minilib\connection\src\sqlite\mncSQLite.pas"/>
         <Line Value="928"/>
       </Item2>
+      <Item3>
+        <Kind Value="bpkSource"/>
+        <WatchScope Value="wpsLocal"/>
+        <WatchKind Value="wpkWrite"/>
+        <Source Value="M:\home\pascal\lib\minilib\connection\src\mncConnections.pas"/>
+        <Line Value="1118"/>
+      </Item3>
+      <Item4>
+        <Kind Value="bpkSource"/>
+        <WatchScope Value="wpsLocal"/>
+        <WatchKind Value="wpkWrite"/>
+        <Source Value="M:\home\pascal\lib\minilib\connection\src\mncConnections.pas"/>
+        <Line Value="1008"/>
+      </Item4>
     </BreakPoints>
     <Watches Count="3">
       <Item1>

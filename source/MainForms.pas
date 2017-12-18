@@ -7,7 +7,7 @@ interface
 
 uses
   windows, Classes, SysUtils, LResources, Forms, Controls, Graphics, Dialogs,
-  LCLType, FileUtil,
+  LCLType, FileUtil, strutils,
   ExtCtrls, StdCtrls, Menus, SynEdit, SynHighlighterSQL, Variants, mnStreams,
   MsgBox, mncCSVExchanges, mncCSV, mnSynHighlighterStdSQL,
   CSVOptionsForms, OptionsForms, psSQLEngine,
@@ -33,6 +33,8 @@ type
     Label4: TLabel;
     Label5: TLabel;
     Label6: TLabel;
+    Label7: TLabel;
+    Label8: TLabel;
     NameEdit: TEdit;
     Label1: TLabel;
     LastIDlbl: TLabel;
@@ -69,7 +71,6 @@ type
     Splitter2: TSplitter;
 
     procedure Button1Click(Sender: TObject);
-    procedure Button2Click(Sender: TObject);
 
     procedure FindBtnClick(Sender: TObject);
     procedure FormClose(Sender: TObject; var CloseAction: TCloseAction);
@@ -82,7 +83,9 @@ type
   private
     FindFields: array of TControlRec;
   public
+    function GetFindWhere(Where: string): string;
     function GetFindSQL: string;
+    function GetFindSQLBy(FieldName, Value: string): string;
 
     procedure ExecuteScript; overload;
     procedure ExecuteScript(DataKind: TDataGridKind; SQL: string); overload;
@@ -162,22 +165,26 @@ begin
   end;
 end;
 
-function ConvertToArabic(s: utf8string): RawByteString;
-begin
-  Result := CP1256ToUTF8(UTF8ToCP1252(s, false));
-end;
-
-function ConvertToLatin(s: utf8string): utf8string;
+function TMainForm.GetFindWhere(Where: string): string;
 var
-  rb: RawByteString;
+  i: integer;
 begin
-  rb := CP1252ToUTF8(UTF8ToCP1256(s, false));
-  Result := rb;
+  Result := '';
+  if Where <> '' then
+  begin
+    for i := 0 to Engine.Tables.Count - 1 do
+    begin
+      if i > 0 then
+        Result := Result + #13'union all '#13;
+      Result := Result + 'select PhoneNum, FName, LName, FATHR, ADDRSS from ' + Engine.Tables[i] + ' where ' + Where;
+    end;
+  end;
 end;
 
 function TMainForm.GetFindSQL: string;
 var
   i: integer;
+  f: string;
   s, Where: utf8string;
   rb: RawByteString;
 begin
@@ -190,21 +197,28 @@ begin
       if Where <> '' then
         Where := Where + ' and ';
 
-      s := trim(FindFields[i].Edit.Text);
+      f := trim(FindFields[i].Edit.Text);
+      f := StringReplace(f, '*', '%', [rfReplaceAll]);
+      if LeftStr(f, 1) = '%' then
+        f := MidStr(f, 2, MaxInt);
+      if RightStr(f, 1) = '%' then
+        f := MidStr(f, 1, Length(f) - 1);
+      s := f;
       rb := CP1252ToUTF8(UTF8ToCP1256(s, false));
       s := rb;
       Where := Where + FindFields[i].SQLName + ' like "%' + s + '%"';
     end
   end;
-  if Where <> '' then
-  begin
-    for i := 0 to Engine.Tables.Count - 1 do
-    begin
-      if i > 0 then
-        Result := Result + #13'union all '#13;
-      Result := Result + 'select PhoneNum, FName, LName, FATHR, ADDRSS from ' + Engine.Tables[i] + ' where ' + Where;
-    end;
-  end;
+  Result := GetFindWhere(Where);
+end;
+
+function TMainForm.GetFindSQLBy(FieldName, Value: string): string;
+var
+  Where: utf8string;
+begin
+  Result := '';
+  Where := FieldName + ' like "%' + ConvertToLatin(Value) + '%"';
+  Result := GetFindWhere(Where);
 end;
 
 procedure TMainForm.OpenData;
@@ -233,13 +247,6 @@ begin
   begin
     FindFields[i].Edit.Text := '';
   end
-end;
-
-procedure TMainForm.Button2Click(Sender: TObject);
-begin
-  //ExecuteScript(dgkData, 'select * from CatNDX0');
-  //ExecuteScript(dgkData, 'select * from CatNDX1 where FullName like "%'+ConvertToLatin('ديركي')+'%"');
-  ExecuteScript(dgkData, 'select * from Tbl011 where LName like "%'+ConvertToLatin('ديركي')+'%"');
 end;
 
 procedure TMainForm.FindBtnClick(Sender: TObject);
